@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Integrity Electrical</title>
+    <meta name="description"
+        content="Comprehensive electrical and solar services. From PV maintenance to whole-home rewiring, we handle it all.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        electric: '#00fcdb',
+                        deep: '#111827',
+                        surface: '#1f2937',
+                        chrome: '#e5e7eb',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-gray-50 text-deep">
+
+    <nav class="bg-deep text-white fixed w-full z-50 border-b border-white/10 backdrop-blur-md bg-deep/95">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="flex justify-between h-20 items-center">
+                <a href="../index.html" class="flex items-center gap-3">
+                    <img src="../assets/logo.png" alt="Integrity" class="h-10 w-auto">
+                    <div class="hidden md:flex flex-col">
+                        <span class="text-xl font-bold uppercase tracking-wider leading-none">Integrity</span>
+                        <span class="text-xs text-electric tracking-[0.2em] font-bold">ELECTRICAL</span>
+                    </div>
+                </a>
+                <div class="hidden lg:flex space-x-8 items-center font-semibold text-sm tracking-wide">
+                    <a href="../index.html" class="text-chrome hover:text-white transition">Home</a>
+                    <a href="index.html" class="text-electric">Services</a>
+                    <a href="../about/index.html" class="text-chrome hover:text-white transition">About</a>
+                    <a href="../contact/index.html" class="text-chrome hover:text-white transition">Contact</a>
+                    <button data-trigger="modal" class="btn-primary py-2 px-6 text-xs">Free Estimate</button>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2"><i
+                        class="fas fa-bars text-2xl"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu-wrapper lg:hidden flex flex-col pt-10 px-6 space-y-6">
+        <a href="../index.html" class="text-2xl font-bold text-white">Home</a>
+        <a href="index.html" class="text-2xl font-bold text-electric">Services</a>
+        <a href="../about/index.html" class="text-2xl font-bold text-white">About Us</a>
+        <a href="../contact/index.html" class="text-2xl font-bold text-white">Contact</a>
+        <button data-trigger="modal" class="btn-primary w-full mt-8">Request Quote</button>
+    </div>
+
+    <!-- Hero -->
+    <header class="relative bg-deep pt-40 pb-20 overflow-hidden text-center">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1549410196-857501a1dbcb?ixlib=rb-1.2.1"
+                class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Our Services</h1>
+            <p class="text-xl text-chrome/70">Engineering-grade solar and electrical solutions for the modern home.</p>
+        </div>
+    </header>
+
+    <main class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 space-y-8">
+
+            <!-- Service Block: Solar -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-2xl transition duration-300">
+                <div class="lg:w-1/3 relative h-64 lg:h-auto">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-deep/20"></div>
+                </div>
+                <div class="p-8 lg:p-12 lg:w-2/3 flex flex-col justify-center">
+                    <div class="text-electric font-bold uppercase tracking-wider text-xs mb-2">Renewable Energy</div>
+                    <h2 class="text-3xl font-bold text-deep mb-4">Residential Solar Installation</h2>
+                    <p class="text-gray-600 mb-6 max-w-2xl">
+                        Custom engineered arrays designed for maximum production. We handle everything from the load
+                        calculation and city permitting to the final install.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="solar-installation/index.html" class="btn-primary py-3 px-8 text-sm">View Solar
+                            Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Block: Maintenance -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-2xl transition duration-300">
+                <div class="lg:w-1/3 relative h-64 lg:h-auto lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-1.2.1"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-deep/20"></div>
+                </div>
+                <div class="p-8 lg:p-12 lg:w-2/3 flex flex-col justify-center lg:order-1">
+                    <div class="text-electric font-bold uppercase tracking-wider text-xs mb-2">System Health</div>
+                    <h2 class="text-3xl font-bold text-deep mb-4">PV Maintenance & Repair</h2>
+                    <p class="text-gray-600 mb-6 max-w-2xl">
+                        Protect your investment. We offer detailed system diagnostics, cleaning, critter guard
+                        installation, and warranty processing for inverters.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="pv-maintenance/index.html" class="btn-primary py-3 px-8 text-sm">View Maintenance</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Block: Electrical -->
+            <div
+                class="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 flex flex-col lg:flex-row hover:shadow-2xl transition duration-300">
+                <div class="lg:w-1/3 relative h-64 lg:h-auto">
+                    <img src="https://images.unsplash.com/photo-1621905252812-925110a741b0?ixlib=rb-1.2.1"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-deep/20"></div>
+                </div>
+                <div class="p-8 lg:p-12 lg:w-2/3 flex flex-col justify-center">
+                    <div class="text-electric font-bold uppercase tracking-wider text-xs mb-2">Residential</div>
+                    <h2 class="text-3xl font-bold text-deep mb-4">General Electrical Service</h2>
+                    <p class="text-gray-600 mb-6 max-w-2xl">
+                        Main panel upgrades (MPU), whole home surge protection, EV charging stations, and safety
+                        inspections.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="electrical/index.html" class="btn-primary py-3 px-8 text-sm">View Electrical</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <img src="../assets/logo.png" alt="Integrity" class="h-8 mb-6 opacity-90">
+                <p class="text-chrome/50 leading-relaxed mb-6">
+                    Integrity Electrical is Arizona's premier engineering-first electrical contractor. We bring
+                    heavy-industrial standards to residential solar and service.
+                </p>
+                <div class="flex gap-4 text-chrome/50">
+                    <a href="#" class="hover:text-electric"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="hover:text-electric"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="hover:text-electric"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Services</h4>
+                <ul class="space-y-3 text-chrome/60">
+                    <li><a href="solar-installation/index.html" class="hover:text-electric transition">Solar
+                            Installation</a></li>
+                    <li><a href="pv-maintenance/index.html" class="hover:text-electric transition">PV Maintenance</a>
+                    </li>
+                    <li><a href="remove-reinstall/index.html" class="hover:text-electric transition">Remove &
+                            Reinstall</a></li>
+                    <li><a href="electrical/index.html" class="hover:text-electric transition">Electrical Panel</a></li>
+                    <li><a href="ev-chargers/index.html" class="hover:text-electric transition">EV Chargers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Company</h4>
+                <ul class="space-y-3 text-chrome/60">
+                    <li><a href="../about/index.html" class="hover:text-electric transition">About Us</a></li>
+                    <li><a href="../contact/index.html" class="hover:text-electric transition">Contact Team</a></li>
+                    <li><a href="#" class="hover:text-electric transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-electric transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Contact</h4>
+                <ul class="space-y-4 text-chrome/60">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt text-electric mt-1"></i>
+                        <span>Yuma, AZ<br>Serving the entire valley</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-phone-alt text-electric"></i>
+                        <a href="tel:4802908492" class="hover:text-white transition">(480) 290-8492</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-electric"></i>
+                        <a href="mailto:jmunoz@integrityelectricalco.com"
+                            class="hover:text-white transition">jmunoz@integrityelectricalco.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-10 mt-16 pt-8 border-t border-white/10 text-center text-chrome/30 text-xs">
+            &copy; 2026 Integrity Electrical Contracting LLC. Licensed • Bonded • Insured.
+        </div>
+    </footer>
+
+    <!-- Global Layout Modal -->
+    <div id="modal-overlay"
+        class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div
+            class="modal-container bg-surface border border-white/10 w-full max-w-lg rounded-2xl shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-blue-500"></div>
+            <button data-close="modal" class="absolute top-4 right-4 text-chrome/50 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-white mb-2">Free Consultation</h3>
+                <p class="text-chrome/60 text-sm mb-6">Enter your details and our engineering team will reach out with a
+                    preliminary estimate.</p>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="firstName" placeholder="First Name" required
+                            class="form-input dark-mode">
+                        <input type="text" name="lastName" placeholder="Last Name" required
+                            class="form-input dark-mode">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="form-input dark-mode">
+                    <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
+                    <input type="text" name="address" placeholder="Property Address" required
+                        class="form-input dark-mode">
+                    <select name="service" class="form-input dark-mode">
+                        <option value="" disabled selected>Service Needed?</option>
+                        <option value="Diagnostic">System Diagnostic ($80)</option>
+                        <option value="Solar">Solar Installation</option>
+                        <option value="Maintenance">PV Maintenance</option>
+                        <option value="Electrical">Electrical Service</option>
+                        <option value="EV Charger">EV Charger Installation</option>
+                    </select>
+                    <textarea name="message" placeholder="Optional Message" rows="2"
+                        class="form-input dark-mode"></textarea>
+                    <button type="submit" class="btn-primary w-full">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button data-trigger="modal"
+        class="fixed bottom-6 right-6 z-50 bg-electric text-deep w-16 h-16 rounded-full shadow-lg shadow-electric/20 flex items-center justify-center transition hover:scale-110 hover:shadow-electric/40">
+        <i class="fas fa-bolt text-2xl"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

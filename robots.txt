@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://integrityelectricalco.com/sitemap.xml

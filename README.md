@@ -1,51 +1,76 @@
 # Integrity Electrical Website
 
-A production-grade, static-first website for Integrity Electrical, served via a lightweight Java server using Spark.
+A high-fidelity, high-conversion static website for **Integrity Electrical Contracting LLC**, an engineering-first solar and electrical contractor in Yuma, AZ.
 
-## 🚀 Features
-*   **Engineering-First Design**: Premium layout, responsive hero strategy, and conversion-optimized forms.
-*   **Clean URLs**: `/about/` serves `about/index.html` seamlessly.
-*   **Production Hardened**: Security headers, sanitized inputs, and no heavy frameworks.
-*   **Java/Maven Backend**: Simple `src` structure for reliable building and testing.
+This project is built to **Lovoson** repository standards: clean code, component-based CSS architecture, and production-ready static assets.
 
-## 🛠 Directory Structure
+## 🚀 Live Demo
+
+[Link to GitHub Pages Deployment]
+
+## ⚡ Tech Stack
+
+- **Core**: Semantic HTML5
+- **Styling**: TailwindCSS (CDN for lightweight deployment) + Custom CSS Variables (`css/style.css`)
+- **Scripting**: Vanilla JavaScript (ES6+)
+- **Icons**: FontAwesome 6
+- **Fonts**: Inter (Google Fonts)
+
+## 🎨 Design System
+
+The site utilizes the **"Electric Blue / Chrome"** design system.
+
+- **Primary Color**: `#00fcdb` (Electric Blue)
+- **Background**: `#111827` (Deep Slate)
+- **Surface**: `#1f2937` (Light Slate)
+- **Typography**: Inter (Weights: 300, 400, 600, 700, 800)
+
+### Key Components
+- **Glassmorphism Cards**: Backdrop blur with transparency.
+- **Neon Glows**: Box-shadows using `rgba(0, 252, 219, 0.3)`.
+- **Engineering-First Imagery**: High-contrast, industrial aesthetic.
+
+## 📂 Project Structure
+
 ```text
 /
-├── pom.xml                 # Maven build configuration
-├── src/
-│   ├── main/
-│   │   ├── java/           # Server.java (Routing logic)
-│   │   └── resources/
-│   │       └── public/     # Static Site Root
-│   │           ├── index.html
-│   │           ├── about/
-│   │           ├── services/
-│   │           ├── contact/
-│   │           ├── css/
-│   │           └── js/
-└── README.md
+├── index.html              # Homepage (Hero, Trust, Lead Form)
+├── about/                  
+│   └── index.html          # Company History & Values
+├── contact/
+│   └── index.html          # Contact Form & Map
+├── services/
+│   ├── index.html          # Services Hub
+│   ├── solar-installation/ # Deep Service Page
+│   ├── pv-maintenance/     # Deep Service Page
+│   ├── remove-reinstall/   # Deep Service Page
+│   ├── electrical/         # Deep Service Page
+│   └── ev-chargers/        # Deep Service Page
+├── assets/
+│   ├── logo.png            # Official High-Fidelity Logo
+│   └── images/             # Visual Assets
+├── css/
+│   └── style.css           # Custom Design System
+└── js/
+    └── script.js           # Form Logic, Modals, Mobile Menu
 ```
 
-## 💻 Local Development
+## 🛠 Features
 
-### Prerequisites
-*   Java JDK 17+
-*   Maven 3.8+
+- **Global Modal System**: Triggers on "Get Quote" and Floating Action Button.
+- **Smart Forms**: AJAX-simulated submission with validation and formatting.
+- **Mobile-First**: Fully responsive navigation and layouts.
+- **SEO Optimized**: Semantic tags, meta descriptions, and clean URLs.
 
-### Run Locally
-```bash
-mvn clean package
-mvn exec:java
-```
-Access the site at: `http://localhost:4567`
+## 🔧 Deployment
 
-## 📦 Deployment
-The project builds a fat JAR containing all assets.
-```bash
-java -jar target/integrity-website-1.0-SNAPSHOT.jar
-```
+This site is designed for **GitHub Pages**.
 
-## 🔒 Security & Forms
-*   Forms submit via AJAX (simulated for demo, easily connected to Web3Forms/FormSubmit).
-*   Input validation ensures strict phone number formatting.
-*   No external dependencies beyond SparkJava.
+1. Go to **Settings** > **Pages**.
+2. Select Source: `Deploy from a branch`.
+3. Select Branch: `main` / `root`.
+4. Click **Save**.
+
+## 📜 License
+
+© 2026 Integrity Electrical Contracting LLC. All Rights Reserved.

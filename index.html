@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrity Electrical | Phoenix Solar & Electrical Engineers</title>
+    <meta name="description"
+        content="Arizona's engineering-first electrical firm. Licensed, Bonded & Insured. Specializing in Solar, Panel Upgrades, and EV Chargers.">
+
+    <!-- Design System -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        electric: '#00fcdb',
+                        deep: '#111827',
+                        surface: '#1f2937',
+                        chrome: '#e5e7eb',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-deep">
+
+    <!-- Navbar -->
+    <nav class="bg-deep text-white fixed w-full z-50 border-b border-white/10 backdrop-blur-md bg-deep/95">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="flex justify-between h-20 items-center">
+                <!-- Brand -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/logo.png" alt="Integrity Electrical" class="h-10 w-auto">
+                    <div class="hidden md:flex flex-col">
+                        <span class="text-xl font-bold uppercase tracking-wider leading-none">Integrity</span>
+                        <span class="text-xs text-electric tracking-[0.2em] font-bold">ELECTRICAL</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8 items-center font-semibold text-sm tracking-wide">
+                    <a href="index.html" class="text-electric">Home</a>
+                    <a href="services/index.html" class="text-chrome hover:text-white transition">Services</a>
+                    <a href="about/index.html" class="text-chrome hover:text-white transition">About</a>
+                    <a href="contact/index.html" class="text-chrome hover:text-white transition">Contact</a>
+                    <button data-trigger="modal" class="btn-primary py-2 px-6 text-xs">
+                        Free Estimate
+                    </button>
+                </div>
+
+                <!-- Mobile Trigger -->
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-menu-wrapper lg:hidden flex flex-col pt-10 px-6 space-y-6">
+        <a href="index.html" class="text-2xl font-bold text-electric">Home</a>
+        <a href="services/index.html" class="text-2xl font-bold text-white">Services</a>
+        <a href="about/index.html" class="text-2xl font-bold text-white">About Us</a>
+        <a href="contact/index.html" class="text-2xl font-bold text-white">Contact</a>
+        <button data-trigger="modal" class="btn-primary w-full text-center mt-8">Request Quote</button>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative bg-deep pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Bg Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1"
+                class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-r from-deep via-deep/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-deep to-transparent lg:hidden"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Copy -->
+            <div class="text-white">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-electric text-xs font-bold uppercase tracking-wider mb-6">
+                    <i class="fas fa-shield-alt"></i> Licensed • Bonded • Insured
+                </div>
+                <h1 class="text-5xl lg:text-7xl mb-6 leading-[1.1]">
+                    Power Your <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electric to-white">Future.</span>
+                </h1>
+                <p class="text-xl text-chrome/80 mb-8 max-w-lg leading-relaxed">
+                    Arizona's engineering-first electrical firm. From custom solar arrays to panel upgrades, we build
+                    systems that last.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button data-trigger="modal" class="btn-primary">
+                        Get $80 Diagnostic
+                    </button>
+                    <a href="services/index.html" class="btn-secondary">
+                        View Services
+                    </a>
+                </div>
+
+                <!-- Trust Row -->
+                <div class="mt-12 flex flex-wrap gap-6 items-center border-t border-white/10 pt-8">
+                    <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
+                        <i class="fas fa-star text-yellow-400"></i> 14+ Years Exp
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
+                        <i class="fas fa-check-circle text-electric"></i> Tesla Certified
+                    </div>
+                    <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
+                        <i class="fas fa-thumbs-up text-electric"></i> BBB A+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form (Glass Card) -->
+            <div
+                class="hidden lg:block bg-surface/60 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
+                <h3 class="text-2xl font-bold text-white mb-2">Request Service</h3>
+                <p class="text-chrome/60 text-sm mb-6">Connect with a licenced engineer today.</p>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="firstName" placeholder="First Name" required
+                            class="form-input dark-mode">
+                        <input type="text" name="lastName" placeholder="Last Name" required
+                            class="form-input dark-mode">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone (e.g. 480-290-8492)" required
+                        class="form-input dark-mode">
+                    <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
+                    <input type="text" name="address" placeholder="Property Address" required
+                        class="form-input dark-mode">
+                    <select name="service" class="form-input dark-mode">
+                        <option value="" disabled selected>Service Needed?</option>
+                        <option value="Diagnostic">System Diagnostic ($80)</option>
+                        <option value="Solar">Solar Installation</option>
+                        <option value="Maintenance">PV Maintenance</option>
+                        <option value="Electrical">Electrical Service</option>
+                    </select>
+                    <textarea name="message" placeholder="Optional Message" rows="2"
+                        class="form-input dark-mode"></textarea>
+                    <button type="submit" class="btn-primary w-full">
+                        Get Your Free Quote
+                    </button>
+                    <p class="text-center text-xs text-chrome/40 mt-3">Your information is secure. No spam.</p>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-electric font-bold tracking-widest uppercase mb-3 text-sm">Our Expertise</h2>
+                <h3 class="text-4xl text-deep mb-6">Complete Energy Solutions</h3>
+                <p class="text-gray-600">We don't subcontract quality. Our in-house team handles every aspect of your
+                    electrical and solar infrastructure.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <a href="services/solar-installation/index.html"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700">
+                        <div class="absolute top-4 left-4 bg-deep text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Engineering First</div>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Solar
+                            Installation</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Custom arrays designed for
+                            Arizona heat and maximum production efficiency.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="services/pv-maintenance/index.html"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-1.2.1"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">PV Maintenance
+                        </h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Cleaning, critter guards, and
+                            inverter diagnostics to restore ROI.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="services/electrical/index.html"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1621905252812-925110a741b0?ixlib=rb-1.2.1"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Electrical
+                            Service</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Panel upgrades, EV chargers,
+                            and safety inspections for your home.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="services/index.html"
+                    class="btn-secondary text-deep border-gray-300 hover:bg-gray-50 hover:border-gray-400">View All
+                    Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust/Numbers Section -->
+    <section class="py-20 bg-deep border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+            <div>
+                <div class="text-4xl md:text-5xl font-bold text-electric mb-2">10k+</div>
+                <div class="text-sm font-semibold text-chrome/60 uppercase tracking-wider">Installations</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold text-electric mb-2">14</div>
+                <div class="text-sm font-semibold text-chrome/60 uppercase tracking-wider">Years Exp.</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold text-electric mb-2">A+</div>
+                <div class="text-sm font-semibold text-chrome/60 uppercase tracking-wider">BBB Rating</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold text-electric mb-2">100%</div>
+                <div class="text-sm font-semibold text-chrome/60 uppercase tracking-wider">Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Lead Magnet -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-6 md:px-10">
+            <div
+                class="bg-deep rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center gap-10">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-electric/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+
+                <div class="md:w-1/2 text-white relative z-10">
+                    <h3 class="text-3xl font-bold mb-4">Fix Your Electrical Issues Today</h3>
+                    <p class="text-chrome/80 mb-6">Stop guessing. Get a licensed engineer to diagnose your system for
+                        just $80.</p>
+                    <ul class="space-y-2 text-sm text-chrome/70">
+                        <li><i class="fas fa-check text-electric mr-2"></i> Same-day scheduling available</li>
+                        <li><i class="fas fa-check text-electric mr-2"></i> Upfront pricing, no hidden fees</li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/2 w-full relative z-10">
+                    <form class="bg-white/5 p-6 rounded-xl border border-white/10 space-y-3">
+                        <div class="grid grid-cols-2 gap-3">
+                            <input type="text" name="firstName" placeholder="First Name" required
+                                class="form-input dark-mode text-sm">
+                            <input type="text" name="lastName" placeholder="Last Name" required
+                                class="form-input dark-mode text-sm">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Phone Number" required
+                            class="form-input dark-mode text-sm">
+                        <input type="email" name="email" placeholder="Email Address" required
+                            class="form-input dark-mode text-sm">
+                        <input type="text" name="address" placeholder="Property Address" required
+                            class="form-input dark-mode text-sm">
+                        <select name="service" class="form-input dark-mode text-sm">
+                            <option value="" disabled selected>Service Needed?</option>
+                            <option value="Diagnostic">System Diagnostic ($80)</option>
+                            <option value="Solar">Solar Installation</option>
+                            <option value="Maintenance">PV Maintenance</option>
+                            <option value="Electrical">Electrical Service</option>
+                            <option value="EV Charger">EV Charger Installation</option>
+                        </select>
+                        <textarea name="message" placeholder="Optional Message" rows="2"
+                            class="form-input dark-mode text-sm"></textarea>
+                        <button type="submit" class="btn-primary w-full py-3 text-sm">Request Callback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <img src="assets/logo.png" alt="Integrity" class="h-8 mb-6 opacity-90">
+                <p class="text-chrome/50 leading-relaxed mb-6">
+                    Integrity Electrical is Arizona's premier engineering-first electrical contractor. We bring
+                    heavy-industrial standards to residential solar and service.
+                </p>
+                <div class="flex gap-4 text-chrome/50">
+                    <a href="#" class="hover:text-electric"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="hover:text-electric"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="hover:text-electric"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Services</h4>
+                <ul class="space-y-3 text-chrome/60">
+                    <li><a href="services/solar-installation/index.html" class="hover:text-electric transition">Solar
+                            Installation</a></li>
+                    <li><a href="services/pv-maintenance/index.html" class="hover:text-electric transition">PV
+                            Maintenance</a></li>
+                    <li><a href="services/remove-reinstall/index.html" class="hover:text-electric transition">Remove &
+                            Reinstall</a></li>
+                    <li><a href="services/electrical/index.html" class="hover:text-electric transition">Electrical
+                            Panel</a></li>
+                    <li><a href="services/ev-chargers/index.html" class="hover:text-electric transition">EV Chargers</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Company</h4>
+                <ul class="space-y-3 text-chrome/60">
+                    <li><a href="about/index.html" class="hover:text-electric transition">About Us</a></li>
+                    <li><a href="contact/index.html" class="hover:text-electric transition">Contact Team</a></li>
+                    <li><a href="#" class="hover:text-electric transition">Careers</a></li>
+                    <li><a href="#" class="hover:text-electric transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Contact</h4>
+                <ul class="space-y-4 text-chrome/60">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt text-electric mt-1"></i>
+                        <span>Yuma, AZ<br>Serving the entire valley</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-phone-alt text-electric"></i>
+                        <a href="tel:4802908492" class="hover:text-white transition">(480) 290-8492</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-electric"></i>
+                        <a href="mailto:jmunoz@integrityelectricalco.com"
+                            class="hover:text-white transition">jmunoz@integrityelectricalco.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-10 mt-16 pt-8 border-t border-white/10 text-center text-chrome/30 text-xs">
+            &copy; 2026 Integrity Electrical Contracting LLC. Licensed • Bonded • Insured.
+        </div>
+    </footer>
+
+    <!-- Global Layout Modal -->
+    <div id="modal-overlay"
+        class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div
+            class="modal-container bg-surface border border-white/10 w-full max-w-lg rounded-2xl shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-blue-500"></div>
+            <button data-close="modal" class="absolute top-4 right-4 text-chrome/50 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-8">
+                <h3 class="text-2xl font-bold text-white mb-2">Free Consultation</h3>
+                <p class="text-chrome/60 text-sm mb-6">Enter your details and our engineering team will reach out with a
+                    preliminary estimate.</p>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" name="firstName" placeholder="First Name" required
+                            class="form-input dark-mode">
+                        <input type="text" name="lastName" placeholder="Last Name" required
+                            class="form-input dark-mode">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="form-input dark-mode">
+                    <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
+                    <input type="text" name="address" placeholder="Property Address" required
+                        class="form-input dark-mode">
+                    <select name="service" class="form-input dark-mode">
+                        <option value="" disabled selected>Service Needed?</option>
+                        <option value="Diagnostic">System Diagnostic ($80)</option>
+                        <option value="Solar">Solar Installation</option>
+                        <option value="Maintenance">PV Maintenance</option>
+                        <option value="Electrical">Electrical Service</option>
+                        <option value="EV Charger">EV Charger Installation</option>
+                    </select>
+                    <textarea name="message" placeholder="Optional Message" rows="2"
+                        class="form-input dark-mode"></textarea>
+                    <button type="submit" class="btn-primary w-full">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button data-trigger="modal"
+        class="fixed bottom-6 right-6 z-50 bg-electric text-deep w-16 h-16 rounded-full shadow-lg shadow-electric/20 flex items-center justify-center transition hover:scale-110 hover:shadow-electric/40">
+        <i class="fas fa-bolt text-2xl"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
