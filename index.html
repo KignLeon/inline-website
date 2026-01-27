@@ -524,11 +524,53 @@
         </div>
     </div>
 
-    <!-- Floating Action Button -->
-    <button data-trigger="modal"
-        class="fixed bottom-6 right-6 z-50 bg-electric text-deep w-16 h-16 rounded-full shadow-lg shadow-electric/20 flex items-center justify-center transition hover:scale-110 hover:shadow-electric/40">
-        <i class="fas fa-bolt text-2xl"></i>
+    <!-- Floating Action Button (Enhanced) -->
+    <button id="fab-cta" class="fab-conversion" aria-label="Get Free Quote">
+        <i class="fas fa-bolt"></i>
     </button>
+
+    <!-- Mobile Sticky CTA -->
+    <div id="mobile-sticky-cta" class="mobile-sticky-cta">
+        <button data-trigger="conversion-modal" class="btn-primary w-full py-4 text-lg font-bold">
+            <i class="fas fa-bolt mr-2"></i> Get $0 Down Solar
+        </button>
+    </div>
+
+    <!-- Conversion Modal -->
+    <div id="conversion-modal-overlay" class="conversion-modal-overlay">
+        <div class="conversion-modal">
+            <button class="conversion-modal-close" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="conversion-modal-header">
+                <div class="conversion-modal-badge">
+                    <i class="fas fa-bolt"></i> Limited Time Offer
+                </div>
+                <h3 class="conversion-modal-title">$0 Down Solar</h3>
+                <p class="conversion-modal-subtitle">See if your home qualifies for zero-down installation</p>
+            </div>
+            <div class="conversion-modal-body">
+                <form class="conversion-modal-form" action="https://formsubmit.co/{{EMAIL}}" method="POST">
+                    <input type="hidden" name="_subject" value="$0 Down Solar Inquiry - Conversion Modal">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="grid grid-cols-2 gap-3">
+                        <input type="text" name="firstName" placeholder="First Name" required
+                            class="form-input dark-mode">
+                        <input type="text" name="lastName" placeholder="Last Name" required
+                            class="form-input dark-mode">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="form-input dark-mode">
+                    <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
+                    <input type="text" name="address" placeholder="Property Address" required
+                        class="form-input dark-mode">
+                    <button type="submit" class="btn-primary w-full py-4 text-lg font-bold mt-2">
+                        <i class="fas fa-check-circle mr-2"></i> Check Eligibility
+                    </button>
+                    <p class="text-center text-xs text-chrome/50 mt-2">No credit impact. 100% secure.</p>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initForms();
     initStats();
     initScrollReveal();
+    initConversionModal();
+    initMobileStickyCTA();
 });
 
 /* --- Stats Counter --- */
@@ -241,4 +243,106 @@ function initScrollReveal() {
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
+}
+
+/* --- Conversion Modal System --- */
+function initConversionModal() {
+    const overlay = document.getElementById('conversion-modal-overlay');
+    const fab = document.getElementById('fab-cta');
+    const closeBtn = overlay?.querySelector('.conversion-modal-close');
+    const triggers = document.querySelectorAll('[data-trigger="conversion-modal"]');
+
+    if (!overlay) return;
+
+    function openModal() {
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // FAB trigger
+    if (fab) {
+        fab.addEventListener('click', openModal);
+    }
+
+    // Close button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    // Click outside to close
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeModal();
+    });
+
+    // Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+    });
+
+    // Other triggers (mobile sticky CTA, etc.)
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', openModal);
+    });
+
+    // Delayed auto-open (2.5s) - session-based to avoid spam
+    const isHomepage = window.location.pathname === '/' ||
+        window.location.pathname.endsWith('/index.html') ||
+        window.location.pathname.endsWith('/Integrity-website/');
+    const isServicesPage = window.location.pathname.includes('/services');
+
+    if ((isHomepage || isServicesPage) && !sessionStorage.getItem('conversionModalShown')) {
+        setTimeout(() => {
+            openModal();
+            sessionStorage.setItem('conversionModalShown', 'true');
+        }, 2500);
+    }
+
+    // Handle form submission inside modal
+    const modalForm = overlay.querySelector('form');
+    if (modalForm) {
+        modalForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            handleSubmission(modalForm);
+            setTimeout(closeModal, 3000);
+        });
+    }
+}
+
+/* --- Mobile Sticky CTA --- */
+function initMobileStickyCTA() {
+    const stickyCTA = document.getElementById('mobile-sticky-cta');
+    if (!stickyCTA) return;
+
+    let lastScrollY = 0;
+    let ticking = false;
+
+    function updateStickyCTA() {
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const docHeight = document.body.scrollHeight;
+
+        // Show after scrolling past hero (300px) and hide near bottom
+        const shouldShow = scrollY > 300 && (scrollY + windowHeight) < (docHeight - 200);
+
+        if (shouldShow) {
+            stickyCTA.classList.add('visible');
+        } else {
+            stickyCTA.classList.remove('visible');
+        }
+
+        lastScrollY = scrollY;
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateStickyCTA);
+            ticking = true;
+        }
+    }, { passive: true });
 }
