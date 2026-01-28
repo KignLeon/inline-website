@@ -118,6 +118,98 @@ h6 {
   box-shadow: 0 0 0 3px rgba(0, 252, 219, 0.3);
 }
 
+/* --- Dark Mode Form Input --- */
+.form-input.dark-mode {
+  background-color: rgba(17, 24, 39, 0.8);
+  border: 1px solid rgba(55, 65, 81, 0.8);
+  color: white;
+}
+
+.form-input.dark-mode::placeholder {
+  color: rgba(229, 231, 235, 0.5);
+}
+
+.form-input.dark-mode:focus {
+  border-color: var(--color-electric);
+  box-shadow: 0 0 0 2px rgba(0, 252, 219, 0.2), 0 0 12px rgba(0, 252, 219, 0.15);
+}
+
+/* --- Custom Dropdown Select --- */
+.form-input.custom-select,
+select.form-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300fcdb' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+select.form-input.dark-mode {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2300fcdb' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+}
+
+select.form-input option {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.75rem;
+}
+
+select.form-input:hover {
+  border-color: rgba(0, 252, 219, 0.5);
+}
+
+/* --- Compact Form Variant (1.5x smaller) --- */
+.form-compact .form-input {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.form-compact select.form-input {
+  padding-right: 2rem;
+  background-position: right 0.75rem center;
+  background-size: 10px;
+}
+
+.form-compact .btn-primary {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.8rem;
+}
+
+/* --- Inline / Horizontal Form Layout --- */
+.form-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+}
+
+.form-inline .form-input {
+  flex: 1;
+  min-width: 150px;
+}
+
+.form-inline .btn-primary {
+  flex-shrink: 0;
+}
+
+/* --- Footer Alignment --- */
+.footer-copyright {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright p {
+  color: rgba(229, 231, 235, 0.4);
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+}
+
 /* --- Utilities --- */
 .text-electric {
   color: var(--color-electric);
@@ -126,6 +218,7 @@ h6 {
 .text-gradient {
   background: linear-gradient(135deg, white 0%, #00fcdb 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

@@ -40,7 +40,8 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Brand -->
                 <a href="index.html" class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png" alt="Integrity Electrical" class="h-10 w-auto">
+                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png"
+                        alt="Integrity Electrical" class="h-10 w-auto">
                     <div class="hidden md:flex flex-col">
                         <span class="text-xl font-bold uppercase tracking-wider leading-none">Integrity</span>
                         <span class="text-xs text-electric tracking-[0.2em] font-bold">ELECTRICAL</span>
@@ -79,7 +80,7 @@
     <header class="relative bg-deep pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <!-- Bg Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1"
+            <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769614537/Screenshot_2026-01-28_at_7.21.06_AM_syu3d6.png"
                 class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-deep via-deep/80 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-deep to-transparent lg:hidden"></div>
@@ -115,21 +116,21 @@
                         <i class="fas fa-star text-yellow-400"></i> 14+ Years Exp
                     </div>
                     <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
-                        <i class="fas fa-check-circle text-electric"></i> Tesla Certified
+                        <i class="fas fa-check-circle text-electric"></i>
                     </div>
                     <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
-                        <i class="fas fa-thumbs-up text-electric"></i> BBB A+
+                        <i class="fas fa-thumbs-up text-electric"></i>
                     </div>
                 </div>
             </div>
 
             <!-- Right Form (Glass Card) -->
             <div
-                class="hidden lg:block bg-surface/60 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
-                <h3 class="text-2xl font-bold text-white mb-2">Request Service</h3>
-                <p class="text-chrome/60 text-sm mb-6">Connect with a licenced engineer today.</p>
-                <form class="space-y-4">
-                    <div class="grid grid-cols-2 gap-4">
+                class="hidden lg:block bg-surface/60 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-2xl">
+                <h3 class="text-xl font-bold text-white mb-1">Request Service</h3>
+                <p class="text-chrome/60 text-xs mb-4">Connect with a licenced engineer today.</p>
+                <form class="space-y-3 form-compact">
+                    <div class="grid grid-cols-2 gap-3">
                         <input type="text" name="firstName" placeholder="First Name" required
                             class="form-input dark-mode">
                         <input type="text" name="lastName" placeholder="Last Name" required
@@ -140,15 +141,15 @@
                     <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
                     <select name="service" class="form-input dark-mode">
                         <option value="" disabled selected>Service Needed?</option>
-                        <option value="Diagnostic">System Diagnostic ($80)</option>
+                        <option value="Diagnostic">System Diagnostic ($75)</option>
                         <option value="Solar">Solar Installation</option>
                         <option value="Maintenance">PV Maintenance</option>
                         <option value="Electrical">Electrical Service</option>
                     </select>
-                    <button type="submit" class="btn-primary w-full">
+                    <button type="submit" class="btn-primary w-full py-2">
                         Get $0 Down Solar
                     </button>
-                    <p class="text-center text-xs text-chrome/40 mt-3">Your information is secure. No spam.</p>
+                    <p class="text-center text-xs text-chrome/40 mt-2">Your information is secure. No spam.</p>
                 </form>
             </div>
         </div>
@@ -272,13 +273,13 @@
                 </div>
 
                 <div class="md:w-1/2 w-full relative z-10">
-                    <form class="bg-white/5 p-6 rounded-xl border border-white/10 space-y-3">
-                        <div class="grid grid-cols-2 gap-3">
-                            <input type="text" placeholder="First Name" class="form-input dark-mode text-sm">
-                            <input type="text" placeholder="Last Name" class="form-input dark-mode text-sm">
+                    <form class="bg-white/5 p-5 rounded-xl border border-white/10 form-compact">
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-2">
+                            <input type="text" placeholder="Full Name" class="form-input dark-mode">
+                            <input type="tel" placeholder="Phone" class="form-input dark-mode">
+                            <input type="email" placeholder="Email" class="form-input dark-mode">
                         </div>
-                        <input type="tel" placeholder="Phone Number" class="form-input dark-mode text-sm">
-                        <button type="submit" class="btn-primary w-full py-3 text-sm">Request Callback</button>
+                        <button type="submit" class="btn-primary w-full py-2 text-sm">Request Callback</button>
                     </form>
                 </div>
             </div>
@@ -343,9 +344,8 @@
                 </ul>
             </div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-6 md:px-10 mt-16 pt-8 border-t border-white/10 text-center text-chrome/30 text-xs">
-            &copy; 2026 Integrity Electrical. Licensed • Bonded • Insured.
+        <div class="footer-copyright max-w-7xl mx-auto px-6 md:px-10">
+            <p>&copy; 2026 Integrity Electrical Contracting LLC. Licensed (ROC# 331526) • Bonded • Insured.</p>
         </div>
     </footer>
 
@@ -358,23 +358,25 @@
             <button data-close="modal" class="absolute top-4 right-4 text-chrome/50 hover:text-white">
                 <i class="fas fa-times text-xl"></i>
             </button>
-            <div class="p-8">
-                <h3 class="text-2xl font-bold text-white mb-2">Free Consultation</h3>
-                <p class="text-chrome/60 text-sm mb-6">Enter your details and our engineering team will reach out with a
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-1">Free Consultation</h3>
+                <p class="text-chrome/60 text-xs mb-4">Enter your details and our engineering team will reach out with a
                     preliminary estimate.</p>
-                <form class="space-y-4">
-                    <div class="grid grid-cols-2 gap-4">
+                <form class="space-y-3 form-compact">
+                    <div class="grid grid-cols-2 gap-3">
                         <input type="text" placeholder="First Name" class="form-input dark-mode">
                         <input type="text" placeholder="Last Name" class="form-input dark-mode">
                     </div>
                     <input type="tel" placeholder="Phone Number" class="form-input dark-mode">
                     <input type="email" placeholder="Email Address" class="form-input dark-mode">
                     <select class="form-input dark-mode">
-                        <option>Service Needed?</option>
-                        <option>Solar</option>
-                        <option>Electrical</option>
+                        <option value="" disabled selected>Service Needed?</option>
+                        <option value="Diagnostic">System Diagnostic ($75)</option>
+                        <option value="Solar">Solar Installation</option>
+                        <option value="Maintenance">PV Maintenance</option>
+                        <option value="Electrical">Electrical Service</option>
                     </select>
-                    <button type="submit" class="btn-primary w-full">Submit Request</button>
+                    <button type="submit" class="btn-primary w-full py-2">Submit Request</button>
                 </form>
             </div>
         </div>

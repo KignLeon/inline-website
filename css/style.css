@@ -1121,3 +1121,186 @@ footer a[href="#"] i {
   filter: drop-shadow(0 0 20px rgba(0, 252, 219, 0.8));
   transform: scale(1.1);
 }
+
+/* ===========================================
+   CUSTOM SELECT DROPDOWN - MODERN GLASS UI
+   =========================================== */
+
+/* Custom select wrapper */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Style the native select to look premium */
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  background-color: rgba(17, 24, 39, 0.8);
+  border: 2px solid #374151;
+  color: white;
+  padding: 0.875rem 3rem 0.875rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300fcdb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 18px;
+}
+
+.custom-select::-ms-expand {
+  display: none;
+}
+
+/* Placeholder option style */
+.custom-select option[value=""][disabled] {
+  color: #6b7280;
+}
+
+.custom-select option {
+  background-color: #1f2937;
+  color: white;
+  padding: 0.75rem;
+}
+
+.custom-select:hover {
+  border-color: rgba(0, 252, 219, 0.5);
+  background-color: rgba(17, 24, 39, 0.95);
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: var(--color-electric);
+  box-shadow: 0 0 0 4px rgba(0, 252, 219, 0.2), 0 4px 20px rgba(0, 252, 219, 0.1);
+  background-color: rgba(17, 24, 39, 0.95);
+}
+
+/* Light mode variant */
+.custom-select.light-mode {
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+  color: #111827;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23111827' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.custom-select.light-mode option {
+  background-color: white;
+  color: #111827;
+}
+
+.custom-select.light-mode:hover {
+  border-color: var(--color-electric);
+}
+
+.custom-select.light-mode:focus {
+  border-color: var(--color-electric);
+  background-color: white;
+}
+
+/* ===========================================
+   FOOTER POLISH - CENTERED COPYRIGHT
+   =========================================== */
+
+.footer-copyright-row {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-copyright-text {
+  color: rgba(229, 231, 235, 0.4);
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-trust-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-trust-badges img {
+  height: 1.75rem;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.footer-trust-badges img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+/* ===========================================
+   ENHANCED ALIGNMENT & POLISH
+   =========================================== */
+
+/* Card grid alignment */
+.grid-align-center {
+  display: grid;
+  align-items: stretch;
+}
+
+.grid-align-center>* {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Consistent section padding rhythm */
+.section-rhythm {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (max-width: 768px) {
+  .section-rhythm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Icon centering utility */
+.icon-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Enhanced trust badge sizing for hero */
+.trust-badge-hero {
+  height: 3rem;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .trust-badge-hero {
+    height: 3.5rem;
+  }
+}
+
+/* Smooth scroll enhancement */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Focus visible for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-electric);
+  outline-offset: 2px;
+}
+
+/* Improved text rendering */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
