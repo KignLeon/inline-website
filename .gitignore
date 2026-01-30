@@ -1,0 +1,11 @@
+.DS_Store
+**/.DS_Store
+node_modules/
+target/
+*.jar
+*.log
+*.zip
+*.mp4
+*.mov
+ui.inspo/
+
