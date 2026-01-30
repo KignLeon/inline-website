@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <rect width="1200" height="600" fill="#e5e7eb"/>
+  <rect x="540" y="240" width="120" height="120" rx="8" fill="#d1d5db"/>
+  <path d="M580 300 L600 270 L620 300 L600 280 Z" fill="#9ca3af"/>
+  <circle cx="580" cy="280" r="10" fill="#9ca3af"/>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#6b7280">Hero Image Placeholder</text>
+  <text x="600" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#9ca3af">Replace with real project photo</text>
+</svg>

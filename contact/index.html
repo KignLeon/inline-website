@@ -3,46 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Base tag removed -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Integrity Electrical - Yuma Arizona</title>
+    <title>Contact Us | Inline Fence Inc - Bridgewater, MA</title>
     <meta name="description"
-        content="Contact Integrity Electrical for solar installation, electrical services, and EV charger installation in Yuma, AZ. Call +1 (928) 843-8293. $75 Diagnostic available.">
+        content="Contact Inline Fence Inc for a free estimate. Serving Bridgewater, Taunton, and the South Shore. Call (508) 697-0058 or fill out our contact form.">
     <meta name="keywords"
-        content="contact Integrity Electrical, Yuma electrician phone, solar quote Arizona, electrical service Yuma">
-    <link rel="canonical" href="https://integrityelectricalco.com/contact/">
-    <link rel="icon" type="image/png"
-        href="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
-    <link rel="apple-touch-icon"
-        href="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
+        content="contact fence contractor, free fence estimate, Bridgewater MA fence company, South Shore fencing contact">
+    <link rel="canonical" href="https://www.inlinefence.com/contact/">
+    <link rel="icon" type="image/svg+xml" href="../assets/placeholders/logo-placeholder.svg">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Contact Us | Integrity Electrical">
-    <meta property="og:description"
-        content="Licensed Engineers ready to solve your electrical challenges. $75 Diagnostic fee, credited towards any repair.">
-    <meta property="og:image"
-        content="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
-    <meta property="og:url" content="https://integrityelectricalco.com/contact/">
+    <meta property="og:title" content="Contact Inline Fence Inc | Free Estimates">
+    <meta property="og:description" content="Get in touch for a free fence installation estimate.">
+    <meta property="og:url" content="https://www.inlinefence.com/contact/">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Us | Integrity Electrical">
-    <meta name="twitter:description"
-        content="Licensed Engineers ready to solve your electrical challenges. $75 Diagnostic available.">
-    <meta name="twitter:image"
-        content="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
-
+    <!-- Design System -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        electric: '#00fcdb',
-                        deep: '#111827',
-                        surface: '#1f2937',
-                        chrome: '#e5e7eb',
+                        electric: '#026440',
+                        accent: '#F4D58D',
+                        deep: '#1C1C1C',
+                        surface: '#4A4A4A',
+                        chrome: '#F8F8F8',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -58,215 +45,292 @@
 
 <body class="bg-gray-50 text-deep">
 
+    <!-- Navbar -->
     <nav class="bg-deep text-white fixed w-full z-50 border-b border-white/10 backdrop-blur-md bg-deep/95">
         <div class="max-w-7xl mx-auto px-6 md:px-10">
             <div class="flex justify-between h-20 items-center">
                 <a href="../" class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png"
-                        alt="Integrity Electrical" class="h-12 w-auto">
+                    <div class="h-12 w-12 bg-electric rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-white text-2xl"></i>
+                    </div>
                     <div class="flex flex-col">
+                        <span class="text-lg md:text-xl font-bold uppercase tracking-wider leading-none">Inline
+                            Fence</span>
                         <span
-                            class="text-lg md:text-xl font-bold uppercase tracking-wider leading-none">Integrity</span>
-                        <span
-                            class="text-[10px] md:text-xs text-electric tracking-[0.15em] md:tracking-[0.2em] font-bold">ELECTRICAL</span>
+                            class="text-[10px] md:text-xs text-accent tracking-[0.15em] md:tracking-[0.2em] font-bold">QUALITY
+                            SINCE 1988</span>
                     </div>
                 </a>
+
                 <div class="hidden lg:flex space-x-8 items-center font-semibold text-sm tracking-wide">
                     <a href="../" class="text-chrome hover:text-white transition">Home</a>
                     <a href="../services/" class="text-chrome hover:text-white transition">Services</a>
                     <a href="../about/" class="text-chrome hover:text-white transition">About</a>
-                    <a href="../contact/" class="text-electric">Contact</a>
+                    <a href="../testimonials/" class="text-chrome hover:text-white transition">Testimonials</a>
+                    <a href="./" class="text-accent">Contact</a>
                     <button data-trigger="modal" class="btn-primary py-2 px-6 text-xs">Free Estimate</button>
                 </div>
-                <button id="mobile-menu-btn" class="lg:hidden text-white p-2"><i
-                        class="fas fa-bars text-2xl"></i></button>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-white p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu-wrapper lg:hidden flex flex-col pt-10 px-6 space-y-6">
         <a href="../" class="text-2xl font-bold text-white">Home</a>
         <a href="../services/" class="text-2xl font-bold text-white">Services</a>
         <a href="../about/" class="text-2xl font-bold text-white">About Us</a>
-        <a href="./" class="text-2xl font-bold text-electric">Contact</a>
-        <button data-trigger="modal" class="btn-primary w-full mt-8">Request Quote</button>
+        <a href="../testimonials/" class="text-2xl font-bold text-white">Testimonials</a>
+        <a href="./" class="text-2xl font-bold text-accent">Contact</a>
+        <button data-trigger="modal" class="btn-primary w-full text-center mt-8">Free Estimate</button>
     </div>
 
-    <!-- Contact Hero -->
-    <header class="relative bg-deep pt-40 pb-20 text-center text-white">
-        <h1 class="text-5xl font-extrabold mb-4">Contact Integrity</h1>
-        <p class="text-xl text-chrome/60 max-w-2xl mx-auto">Licensed Engineers ready to solve your electrical
-            challenges. $75 Diagnostic fee, credited towards any repair.</p>
+    <!-- Page Header -->
+    <header class="bg-deep pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-electric/10 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-accent text-xs font-bold uppercase tracking-wider mb-6">
+                <i class="fas fa-phone-alt"></i> Get In Touch
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Contact Us</h1>
+            <p class="text-xl text-chrome/80 max-w-2xl">Ready to start your fencing project? Get in touch for a free,
+                no-obligation estimate.</p>
+        </div>
     </header>
 
-    <main class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <!-- Contact Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
-            <!-- Info Column -->
-            <div>
-                <h2 class="text-3xl font-bold text-deep mb-8">Get In Touch</h2>
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-deep mb-6">Request a Free Estimate</h2>
+                    <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you within 24 hours. Or
+                        give us a call — we'd love to hear from you!</p>
 
-                <div class="space-y-8">
-                    <div class="flex items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-electric/10 p-3 rounded-full text-electric mr-6">
-                            <i class="fas fa-phone-alt text-2xl"></i>
+                    <form class="space-y-6" action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-deep mb-2">First Name *</label>
+                                <input type="text" name="firstName" placeholder="John" required class="form-input">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-deep mb-2">Last Name *</label>
+                                <input type="text" name="lastName" placeholder="Smith" required class="form-input">
+                            </div>
                         </div>
+
                         <div>
-                            <h3 class="font-bold text-lg mb-1">Phone</h3>
-                            <a href="tel:+19288438293"
-                                class="text-gray-600 hover:text-electric transition text-lg block">+1 (928) 843-8293</a>
-                            <span class="text-xs text-gray-400">Available Mon-Fri, 7am - 5pm</span>
+                            <label class="block text-sm font-semibold text-deep mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" placeholder="(508) 555-1234" required class="form-input">
                         </div>
-                    </div>
 
-                    <div class="flex items-start bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-                        <div class="bg-electric/10 p-3 rounded-full text-electric mr-6">
-                            <i class="fas fa-envelope text-2xl"></i>
-                        </div>
                         <div>
-                            <h3 class="font-bold text-lg mb-1">Email</h3>
-                            <a href="mailto:jmunoz@integrityelectricalco.com"
-                                class="text-gray-600 hover:text-electric transition text-lg block">jmunoz@integrityelectricalco.com</a>
+                            <label class="block text-sm font-semibold text-deep mb-2">Email Address *</label>
+                            <input type="email" name="email" placeholder="john@example.com" required class="form-input">
                         </div>
-                    </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-deep mb-2">Zip Code *</label>
+                                <input type="text" name="zipcode" placeholder="02324" required class="form-input">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-deep mb-2">Property Type</label>
+                                <select name="propertyType" class="form-input">
+                                    <option value="" disabled selected>Select...</option>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Industrial">Industrial</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-deep mb-2">Type of Fence</label>
+                            <select name="service" class="form-input">
+                                <option value="" disabled selected>What type of fence are you interested in?</option>
+                                <option value="Aluminum">Aluminum Fence</option>
+                                <option value="Vinyl">Vinyl / PVC Fence</option>
+                                <option value="Wood">Wooden Fence</option>
+                                <option value="Chainlink">Chainlink Fence</option>
+                                <option value="Commercial">Commercial Fencing</option>
+                                <option value="Other">Other / Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-deep mb-2">Project Details</label>
+                            <textarea name="message" rows="4"
+                                placeholder="Tell us about your project — approximate length of fence, any special requirements, timeline, etc."
+                                class="form-input"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_subject" value="New Contact Form Submission">
+                        <button type="submit" class="btn-primary w-full text-lg py-4">
+                            <i class="fas fa-paper-plane mr-2"></i> Submit Request
+                        </button>
+                        <p class="text-center text-sm text-gray-500">Your information is secure. We never share your
+                            data.</p>
+                    </form>
                 </div>
 
-                <div class="mt-12 p-8 bg-surface rounded-2xl border border-white/10 text-white">
-                    <h3 class="font-bold text-xl mb-4">Service Philosophy</h3>
-                    <p class="text-chrome/70 leading-relaxed mb-6">
-                        We don't employ commission-based sales staff. When you call, you speak with a team that
-                        understands engineering and code requirements.
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-bold text-deep mb-6">Direct Contact</h2>
+                    <p class="text-gray-600 mb-8">Prefer to talk? Give us a call or stop by our location in Bridgewater.
                     </p>
-                    <div class="flex gap-4 text-2xl text-chrome/50">
-                        <i class="fab fa-facebook hover:text-electric cursor-pointer"></i>
-                        <i class="fab fa-instagram hover:text-electric cursor-pointer"></i>
-                        <i class="fab fa-linkedin hover:text-electric cursor-pointer"></i>
+
+                    <!-- Phone Numbers -->
+                    <div class="bg-gray-50 rounded-2xl p-6 mb-6 border border-gray-100">
+                        <h3 class="font-bold text-deep mb-4">Call Us</h3>
+                        <div class="space-y-4">
+                            <a href="tel:+15086970058"
+                                class="flex items-center gap-4 text-lg text-gray-700 hover:text-electric transition">
+                                <div class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone-alt text-electric"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold">(508) 697-0058</div>
+                                    <div class="text-sm text-gray-500">Primary Line</div>
+                                </div>
+                            </a>
+                            <a href="tel:+15088242290"
+                                class="flex items-center gap-4 text-lg text-gray-700 hover:text-electric transition">
+                                <div class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone-alt text-electric"></i>
+                                </div>
+                                <div>
+                                    <div class="font-bold">(508) 824-2290</div>
+                                    <div class="text-sm text-gray-500">Secondary Line</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="bg-gray-50 rounded-2xl p-6 mb-6 border border-gray-100">
+                        <h3 class="font-bold text-deep mb-4">Visit Us</h3>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-electric"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-700">20 Bridge Street</div>
+                                <div class="text-gray-600">Bridgewater, MA 02324</div>
+                                <a href="https://maps.google.com/?q=20+Bridge+St+Bridgewater+MA+02324" target="_blank"
+                                    class="text-electric font-semibold text-sm mt-2 inline-block hover:underline">
+                                    Get Directions <i class="fas fa-external-link-alt ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Area -->
+                    <div class="bg-electric/5 rounded-2xl p-6 border border-electric/20">
+                        <h3 class="font-bold text-deep mb-4"><i class="fas fa-map text-electric mr-2"></i> Service Area
+                        </h3>
+                        <p class="text-gray-600 mb-4">We proudly serve Bridgewater, Taunton, and the greater South Shore
+                            region, including:</p>
+                        <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                            <div><i class="fas fa-check text-electric mr-2"></i>Bridgewater</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>Taunton</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>Easton</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>Raynham</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>Middleboro</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>Brockton</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>West Bridgewater</div>
+                            <div><i class="fas fa-check text-electric mr-2"></i>East Bridgewater</div>
+                        </div>
+                        <p class="text-gray-500 text-sm mt-4">Don't see your town? Give us a call — we may still be able
+                            to help!</p>
                     </div>
                 </div>
             </div>
-
-            <!-- Form Column -->
-            <div class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl border border-gray-100">
-                <h2 class="text-2xl font-bold text-deep mb-6">Send Us a Message</h2>
-                <form class="space-y-5" action="https://formsubmit.co/{{EMAIL}}" method="POST">
-                    <div class="grid grid-cols-2 gap-5">
-                        <input type="text" name="firstName" placeholder="First Name" required
-                            class="form-input bg-gray-50 border-gray-200">
-                        <input type="text" name="lastName" placeholder="Last Name" required
-                            class="form-input bg-gray-50 border-gray-200">
-                    </div>
-                    <input type="tel" name="phone" placeholder="Phone (e.g. 928-843-8293)" required
-                        class="form-input bg-gray-50 border-gray-200">
-                    <input type="email" name="email" placeholder="Email Address" required
-                        class="form-input bg-gray-50 border-gray-200">
-                    <input type="text" name="zipcode" placeholder="Zip Code" required
-                        class="form-input bg-gray-50 border-gray-200">
-                    <select name="service" class="custom-select light-mode">
-                        <option value="" disabled selected>Service Needed?</option>
-                        <option value="Diagnostic">System Diagnostic ($75)</option>
-                        <option value="Solar">Solar Installation</option>
-                        <option value="Maintenance">PV Maintenance</option>
-                        <option value="Electrical">Electrical Service</option>
-                        <option value="EV Charger">EV Charger Installation</option>
-                    </select>
-                    <textarea name="message" rows="4" placeholder="How can we help you?"
-                        class="form-input bg-gray-50 border-gray-200"></textarea>
-                    <button type="submit" class="btn-primary w-full py-4 text-base">Submit Message</button>
-                    <p class="text-center text-xs text-gray-400 mt-4">We respect your inbox. No spam.</p>
-                </form>
-            </div>
-
         </div>
-    </main>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.3647!2d-70.9736!3d41.9867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4810d0c0c0c0c%3A0x0!2sBridgewater%2C%20MA!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Inline Fence Location Map">
+            </iframe>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-black text-white py-16 border-t border-white/10 text-sm">
         <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529635/integrityelectricalaz-logo-fotor-bg-remover-202601278024_fjdpvj.png"
-                    alt="Integrity Electrical" class="h-10 mb-6 opacity-90">
-                <p class="text-chrome/50 leading-relaxed mb-6">
-                    Integrity Electrical is Arizona's premier engineering-first electrical contractor. We bring
-                    heavy-industrial standards to residential solar and service.
-                </p>
-                <div class="flex gap-4 text-chrome/50">
-                    <a href="#" class="hover:text-electric"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="hover:text-electric"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="hover:text-electric"><i class="fab fa-linkedin fa-lg"></i></a>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="h-10 w-10 bg-electric rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-white text-xl"></i>
+                    </div>
+                    <span class="text-lg font-bold">Inline Fence</span>
                 </div>
+                <p class="text-chrome/50 leading-relaxed mb-6">
+                    Family-owned fence contractor serving Bridgewater & the South Shore since 1988.
+                </p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Services</h4>
                 <ul class="space-y-3 text-chrome/60">
-                    <li><a href="../services/solar-installation/" class="hover:text-electric transition">Solar
-                            Installation</a></li>
-                    <li><a href="../services/pv-maintenance/" class="hover:text-electric transition">PV
-                            Maintenance</a></li>
-                    <li><a href="../services/remove-reinstall/" class="hover:text-electric transition">Remove &
-                            Reinstall</a></li>
-                    <li><a href="../services/electrical/" class="hover:text-electric transition">Electrical
-                            Panel</a></li>
-                    <li><a href="../services/ev-chargers/" class="hover:text-electric transition">EV Chargers</a>
-                    </li>
+                    <li><a href="../services/" class="hover:text-accent transition">Aluminum Fences</a></li>
+                    <li><a href="../services/" class="hover:text-accent transition">Vinyl / PVC Fences</a></li>
+                    <li><a href="../services/" class="hover:text-accent transition">Wooden Fences</a></li>
+                    <li><a href="../services/" class="hover:text-accent transition">Chainlink Fences</a></li>
+                    <li><a href="../services/" class="hover:text-accent transition">Commercial Fencing</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Company</h4>
                 <ul class="space-y-3 text-chrome/60">
-                    <li><a href="../about/" class="hover:text-electric transition">About Us</a></li>
-                    <li><a href="../contact/" class="hover:text-electric transition">Contact Team</a></li>
-                    <li><a href="#" class="hover:text-electric transition">Careers</a></li>
-                    <li><a href="#" class="hover:text-electric transition">Privacy Policy</a></li>
+                    <li><a href="../about/" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="../testimonials/" class="hover:text-accent transition">Testimonials</a></li>
+                    <li><a href="./" class="hover:text-accent transition">Contact</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Contact</h4>
                 <ul class="space-y-4 text-chrome/60">
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-map-marker-alt text-electric mt-1"></i>
-                        <span>Yuma, AZ<br>Serving the entire valley</span>
+                        <i class="fas fa-map-marker-alt text-accent mt-1"></i>
+                        <span>20 Bridge St<br>Bridgewater, MA 02324</span>
                     </li>
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-phone-alt text-electric"></i>
-                        <a href="tel:+19288438293" class="hover:text-white transition">+1 (928) 843-8293</a>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <i class="fas fa-envelope text-electric"></i>
-                        <a href="mailto:jmunoz@integrityelectricalco.com"
-                            class="hover:text-white transition">jmunoz@integrityelectricalco.com</a>
+                        <i class="fas fa-phone-alt text-accent"></i>
+                        <a href="tel:+15086970058" class="hover:text-white transition">(508) 697-0058</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright-row max-w-7xl mx-auto px-6 md:px-10">
-            <p class="footer-copyright-text">&copy; 2026 Integrity Electrical Contracting LLC. Licensed (ROC# 331526) •
-                Bonded • Insured.</p>
-            <div class="footer-trust-badges">
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529095/tesla-solar-certified_y5dmwj.webp"
-                    alt="Tesla Certified">
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769528968/bbb-logo_cke8w2.png"
-                    alt="BBB A+">
-            </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-10 mt-12 pt-8 border-t border-white/10">
+            <p class="text-center text-chrome/40">&copy; 2025 Inline Fence Inc. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Global Layout Modal: $0 Down Solar -->
+    <!-- Modal -->
     <div id="modal-overlay"
         class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div
             class="modal-container bg-surface border border-white/10 w-full max-w-lg rounded-2xl shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-blue-500"></div>
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-accent"></div>
             <button data-close="modal" class="absolute top-4 right-4 text-chrome/50 hover:text-white">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-8">
-                <div
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-electric text-xs font-bold uppercase tracking-wider mb-4">
-                    <i class="fas fa-sun"></i> Solar Savings Program
-                </div>
-                <h3 class="text-3xl font-bold text-white mb-2">$0 Down Solar Options</h3>
-                <p class="text-chrome/80 text-sm mb-6">See if your home qualifies for $0 down solar installation. Keep
-                    your current bill or lower it immediately.</p>
-                <form class="space-y-4" action="https://formsubmit.co/{{EMAIL}}" method="POST">
+                <h3 class="text-3xl font-bold text-white mb-2">Get Your Free Quote</h3>
+                <p class="text-chrome/80 text-sm mb-6">Tell us about your fencing project.</p>
+                <form class="space-y-4" action="#" method="POST">
                     <div class="grid grid-cols-2 gap-4">
                         <input type="text" name="firstName" placeholder="First Name" required
                             class="form-input dark-mode">
@@ -275,21 +339,21 @@
                     </div>
                     <input type="tel" name="phone" placeholder="Phone Number" required class="form-input dark-mode">
                     <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
-                    <input type="text" name="zipcode" placeholder="Zip Code" required
-                        class="form-input dark-mode">
-                    <input type="hidden" name="service" value="Solar ($0 Down Inquiry)">
-                    <button type="submit" class="btn-primary w-full text-lg">Check Eligibility</button>
-                    <p class="text-center text-xs text-chrome/40">No credit impact to check. 100% Secure.</p>
+                    <input type="text" name="zipcode" placeholder="Zip Code" required class="form-input dark-mode">
+                    <select name="service" class="custom-select">
+                        <option value="" disabled selected>Type of Fence?</option>
+                        <option value="Aluminum">Aluminum Fence</option>
+                        <option value="Vinyl">Vinyl / PVC Fence</option>
+                        <option value="Wood">Wooden Fence</option>
+                        <option value="Chainlink">Chainlink Fence</option>
+                        <option value="Commercial">Commercial Fencing</option>
+                        <option value="Other">Other / Not Sure</option>
+                    </select>
+                    <button type="submit" class="btn-primary w-full text-lg">Get Free Estimate</button>
                 </form>
             </div>
         </div>
     </div>
-
-    <!-- Floating Action Button -->
-    <button data-trigger="modal"
-        class="fixed bottom-6 right-6 z-50 bg-electric text-deep w-16 h-16 rounded-full shadow-lg shadow-electric/20 flex items-center justify-center transition hover:scale-110 hover:shadow-electric/40">
-        <i class="fas fa-bolt text-2xl"></i>
-    </button>
 
     <script src="../js/script.js"></script>
 </body>

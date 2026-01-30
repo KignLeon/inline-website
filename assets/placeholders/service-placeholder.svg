@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#e5e7eb"/>
+  <rect x="150" y="100" width="100" height="80" rx="6" fill="#d1d5db"/>
+  <rect x="165" y="115" width="70" height="8" rx="2" fill="#9ca3af"/>
+  <rect x="165" y="130" width="50" height="6" rx="2" fill="#b0b5bc"/>
+  <rect x="165" y="145" width="60" height="6" rx="2" fill="#b0b5bc"/>
+  <text x="200" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b7280">Service Image Placeholder</text>
+  <text x="200" y="248" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#9ca3af">Replace with service photo</text>
+</svg>

@@ -3,34 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Base tag removed for GitHub Pages compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrity Electrical | Yuma Solar & Electrical Engineers</title>
+    <title>Inline Fence Inc | Quality Fence Installation in Bridgewater, MA</title>
     <meta name="description"
-        content="Arizona's engineering-first electrical firm. Licensed, Bonded & Insured. Specializing in Solar, Panel Upgrades, and EV Chargers. $0 Down Solar available.">
+        content="Family-owned fence contractor serving Bridgewater & the South Shore since 1988. Quality aluminum, vinyl, wood, and chainlink fence installation. Free estimates.">
     <meta name="keywords"
-        content="solar installation Yuma, electrical contractor Arizona, EV charger install, solar panel maintenance, panel upgrade Yuma">
-    <link rel="canonical" href="https://integrityelectricalco.com/">
-    <link rel="icon" type="image/png"
-        href="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
-    <link rel="apple-touch-icon"
-        href="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
+        content="fence installation, fence contractor, Bridgewater MA, South Shore fencing, aluminum fence, vinyl fence, wood fence, chainlink fence, commercial fencing">
+    <link rel="canonical" href="https://www.inlinefence.com/">
+    <link rel="icon" type="image/svg+xml" href="assets/placeholders/logo-placeholder.svg">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Integrity Electrical | Yuma Solar & Electrical Engineers">
+    <meta property="og:title" content="Inline Fence Inc | Quality Fence Installation in Bridgewater, MA">
     <meta property="og:description"
-        content="Arizona's engineering-first electrical firm. Licensed, Bonded & Insured. $0 Down Solar available.">
-    <meta property="og:image"
-        content="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
-    <meta property="og:url" content="https://integrityelectricalco.com/">
+        content="Family-owned fence contractor serving Bridgewater & the South Shore for over 50 years. Free estimates available.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://www.inlinefence.com/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Integrity Electrical | Yuma Solar & Electrical Engineers">
-    <meta name="twitter:description" content="Arizona's engineering-first electrical firm. $0 Down Solar available.">
-    <meta name="twitter:image"
-        content="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png">
+    <meta name="twitter:title" content="Inline Fence Inc | Quality Fence Installation">
+    <meta name="twitter:description" content="Four generations of professional fence installation in Massachusetts.">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
 
     <!-- Design System -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -39,10 +33,11 @@
             theme: {
                 extend: {
                     colors: {
-                        electric: '#00fcdb',
-                        deep: '#111827',
-                        surface: '#1f2937',
-                        chrome: '#e5e7eb',
+                        electric: '#026440',
+                        accent: '#F4D58D',
+                        deep: '#1C1C1C',
+                        surface: '#4A4A4A',
+                        chrome: '#F8F8F8',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -64,21 +59,23 @@
             <div class="flex justify-between h-20 items-center">
                 <!-- Brand -->
                 <a href="./" class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529588/integrity_electrical_logo_1769449336717-fotor-bg-remover-2026012775937_abxbgn.png"
-                        alt="Integrity Electrical" class="h-12 w-auto">
+                    <div class="h-12 w-12 bg-electric rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-white text-2xl"></i>
+                    </div>
                     <div class="flex flex-col">
                         <span
-                            class="text-lg md:text-xl font-bold uppercase tracking-wider leading-none">Integrity</span>
+                            class="text-lg md:text-xl font-bold uppercase tracking-wider leading-none">Inline Fence</span>
                         <span
-                            class="text-[10px] md:text-xs text-electric tracking-[0.15em] md:tracking-[0.2em] font-bold">ELECTRICAL</span>
+                            class="text-[10px] md:text-xs text-accent tracking-[0.15em] md:tracking-[0.2em] font-bold">QUALITY SINCE 1988</span>
                     </div>
                 </a>
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex space-x-8 items-center font-semibold text-sm tracking-wide">
-                    <a href="./" class="text-electric">Home</a>
+                    <a href="./" class="text-accent">Home</a>
                     <a href="services/" class="text-chrome hover:text-white transition">Services</a>
                     <a href="about/" class="text-chrome hover:text-white transition">About</a>
+                    <a href="testimonials/" class="text-chrome hover:text-white transition">Testimonials</a>
                     <a href="contact/" class="text-chrome hover:text-white transition">Contact</a>
                     <button data-trigger="modal" class="btn-primary py-2 px-6 text-xs">
                         Free Estimate
@@ -95,19 +92,20 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="mobile-menu-wrapper lg:hidden flex flex-col pt-10 px-6 space-y-6">
-        <a href="./" class="text-2xl font-bold text-electric">Home</a>
+        <a href="./" class="text-2xl font-bold text-accent">Home</a>
         <a href="services/" class="text-2xl font-bold text-white">Services</a>
         <a href="about/" class="text-2xl font-bold text-white">About Us</a>
+        <a href="testimonials/" class="text-2xl font-bold text-white">Testimonials</a>
         <a href="contact/" class="text-2xl font-bold text-white">Contact</a>
-        <button data-trigger="modal" class="btn-primary w-full text-center mt-8">Request Quote</button>
+        <button data-trigger="modal" class="btn-primary w-full text-center mt-8">Free Estimate</button>
     </div>
 
     <!-- Hero Section -->
     <header class="relative bg-deep pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <!-- Bg Image -->
         <div class="absolute inset-0 z-0">
-            <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769614720/tesla-powerwall3-installed_cptjqd.webp"
-                class="w-full h-full object-cover opacity-50" alt="Tesla Powerwall 3 installed on home">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80"
+                class="w-full h-full object-cover opacity-40" alt="Professional fence installation">
             <div class="absolute inset-0 bg-gradient-to-r from-deep via-deep/80 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-deep to-transparent lg:hidden"></div>
         </div>
@@ -116,40 +114,41 @@
             <!-- Left Copy -->
             <div class="text-white">
                 <div
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-electric text-xs font-bold uppercase tracking-wider mb-6">
-                    <i class="fas fa-shield-alt"></i> Licensed • Bonded • Insured
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-accent text-xs font-bold uppercase tracking-wider mb-6">
+                    <i class="fas fa-users"></i> Family-Owned Since 1988
                 </div>
                 <h1 class="text-5xl lg:text-7xl mb-6 leading-[1.1]">
-                    Power Your <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electric to-white">Future.</span>
+                    Quality Fencing<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white">Installed Right.</span>
                 </h1>
                 <p class="text-xl text-chrome/80 mb-8 max-w-lg leading-relaxed">
-                    Arizona's engineering-first electrical firm. From custom solar arrays to panel upgrades, we build
-                    systems that last.
+                    Four generations of the Bump family have delivered quality fencing to Bridgewater & the South Shore. From custom wooden privacy fences to durable commercial installations — we build fences that last.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <button data-trigger="modal" class="btn-primary">
-                        Get $75 Diagnostic
+                        <i class="fas fa-clipboard-check mr-2"></i> Request Free Estimate
                     </button>
                     <a href="services/" class="btn-secondary">
-                        View Services
+                        View Fence Types
                     </a>
                 </div>
 
                 <!-- Trust Row -->
                 <div class="mt-12 flex flex-wrap gap-8 items-center border-t border-white/10 pt-8">
                     <div class="flex items-center gap-2 text-sm font-semibold text-chrome">
-                        <i class="fas fa-star text-yellow-400"></i> 14+ Years Exp
+                        <i class="fas fa-star text-accent"></i> 50+ Years Experience
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529095/tesla-solar-certified_y5dmwj.webp"
-                            alt="Tesla Certified" class="h-10 md:h-14 trust-badge trust-badge-primary">
-                        <span class="text-sm font-bold text-white hidden md:inline">Tesla Certified</span>
+                        <div class="h-10 w-10 bg-white/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-users text-electric"></i>
+                        </div>
+                        <span class="text-sm font-bold text-white hidden md:inline">4 Generations</span>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769528968/bbb-logo_cke8w2.png"
-                            alt="BBB A+" class="h-8 md:h-10 trust-badge" style="animation-delay: 0.2s">
-                        <span class="text-sm font-bold text-white hidden md:inline">BBB A+</span>
+                        <div class="h-10 w-10 bg-white/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-check-circle text-electric"></i>
+                        </div>
+                        <span class="text-sm font-bold text-white hidden md:inline">Licensed & Insured</span>
                     </div>
                 </div>
             </div>
@@ -157,33 +156,35 @@
             <!-- Right Form (Glass Card) -->
             <div
                 class="hidden lg:block bg-surface/60 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-2xl">
-                <h3 class="text-2xl font-bold text-white mb-2">Request Service</h3>
-                <p class="text-chrome/60 text-sm mb-6">Connect with a licenced engineer today.</p>
-                <form class="space-y-4" action="https://formsubmit.co/{{EMAIL}}" method="POST">
+                <h3 class="text-2xl font-bold text-white mb-2">Get Your Free Estimate</h3>
+                <p class="text-chrome/60 text-sm mb-6">Tell us about your project — we'll contact you within 24 hours.</p>
+                <form class="space-y-4" action="#" method="POST">
                     <div class="grid grid-cols-2 gap-4">
                         <input type="text" name="firstName" placeholder="First Name" required
                             class="form-input dark-mode">
                         <input type="text" name="lastName" placeholder="Last Name" required
                             class="form-input dark-mode">
                     </div>
-                    <input type="tel" name="phone" placeholder="Phone (e.g. 928-843-8293)" required
+                    <input type="tel" name="phone" placeholder="Phone Number" required
                         class="form-input dark-mode">
                     <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
                     <input type="text" name="zipcode" placeholder="Zip Code" required
                         class="form-input dark-mode">
                     <select name="service" class="custom-select">
-                        <option value="" disabled selected>Service Needed?</option>
-                        <option value="Diagnostic">System Diagnostic ($75)</option>
-                        <option value="Solar">Solar Installation</option>
-                        <option value="Maintenance">PV Maintenance</option>
-                        <option value="Electrical">Electrical Service</option>
+                        <option value="" disabled selected>Type of Fence?</option>
+                        <option value="Aluminum">Aluminum Fence</option>
+                        <option value="Vinyl">Vinyl / PVC Fence</option>
+                        <option value="Wood">Wooden Fence</option>
+                        <option value="Chainlink">Chainlink Fence</option>
+                        <option value="Commercial">Commercial Fencing</option>
+                        <option value="Other">Other / Not Sure</option>
                     </select>
-                    <textarea name="message" placeholder="Optional Message" rows="2"
+                    <textarea name="message" placeholder="Tell us about your project (optional)" rows="2"
                         class="form-input dark-mode"></textarea>
                     <button type="submit" class="btn-primary w-full">
                         Get Your Free Quote
                     </button>
-                    <p class="text-center text-xs text-chrome/40 mt-3">Your information is secure. No spam.</p>
+                    <p class="text-center text-xs text-chrome/40 mt-3">Your information is secure. No spam ever.</p>
                 </form>
             </div>
         </div>
@@ -194,75 +195,116 @@
         <div class="max-w-7xl mx-auto px-6 md:px-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-electric font-bold tracking-widest uppercase mb-3 text-sm">Our Expertise</h2>
-                <h3 class="text-4xl text-deep mb-6">Complete Energy Solutions</h3>
-                <p class="text-gray-600">We don't subcontract quality. Our in-house team handles every aspect of your
-                    electrical and solar infrastructure.</p>
+                <h3 class="text-4xl text-deep mb-6">Fence Types for Every Need</h3>
+                <p class="text-gray-600">Quality installations tailored to your property. Whether you need privacy, security, or curb appeal — we have the right fence for you.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <a href="services/solar-installation/"
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Aluminum -->
+                <a href="services/"
                     class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
                     <div class="relative h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1"
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
                             class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
-                            alt="Solar panel installation">
+                            alt="Aluminum fence installation">
+                        <div class="absolute top-4 left-4 bg-electric text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Popular</div>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Aluminum Fences</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Durable, low-maintenance fencing with a modern, elegant look. Perfect for pools and property lines.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vinyl -->
+                <a href="services/"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
+                            alt="Vinyl PVC fence">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Vinyl / PVC Fences</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Clean, classic fencing with minimal upkeep. Won't rot, warp, or need painting — ever.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Wood -->
+                <a href="services/"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
+                            alt="Wooden fence installation">
+                        <div class="absolute top-4 left-4 bg-accent text-deep text-xs font-bold px-3 py-1 rounded-full">
+                            Classic</div>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Wooden Fences</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Traditional, customizable styles for privacy and charm. Natural beauty that enhances any property.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Chainlink -->
+                <a href="services/"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
+                            alt="Chainlink fence">
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Chainlink Fences</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Functional, secure, and affordable. Ideal for yards, sports facilities, and pet containment.</p>
+                        <div class="flex items-center text-electric font-bold text-sm">
+                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Commercial -->
+                <a href="services/"
+                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
+                            alt="Commercial fencing">
                         <div class="absolute top-4 left-4 bg-deep text-white text-xs font-bold px-3 py-1 rounded-full">
-                            Engineering First</div>
+                            Business</div>
                     </div>
                     <div class="px-4 pb-4">
-                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Solar
-                            Installation</h4>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Custom arrays designed for
-                            Arizona heat and maximum production efficiency.</p>
+                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Commercial Fencing</h4>
+                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Heavy-duty security solutions for business properties, industrial sites, and municipal facilities.</p>
                         <div class="flex items-center text-electric font-bold text-sm">
                             Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
                         </div>
                     </div>
                 </a>
 
-                <!-- Card 2 -->
-                <a href="services/pv-maintenance/"
-                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80"
-                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
-                            alt="Solar panel maintenance">
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">PV Maintenance
-                        </h4>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Cleaning, critter guards, and
-                            inverter diagnostics to restore ROI.</p>
-                        <div class="flex items-center text-electric font-bold text-sm">
-                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Card 3 -->
-                <a href="services/electrical/"
-                    class="group bg-white border border-gray-100 rounded-2xl p-2 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="relative h-48 rounded-xl overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1555963153-11ff60182d08?auto=format&fit=crop&w=800&q=80"
-                            class="object-cover w-full h-full group-hover:scale-110 transition duration-700"
-                            alt="Electrical panel upgrade">
-                    </div>
-                    <div class="px-4 pb-4">
-                        <h4 class="text-xl font-bold text-deep mb-2 group-hover:text-electric transition">Electrical
-                            Service</h4>
-                        <p class="text-gray-500 text-sm mb-4 leading-relaxed line-clamp-2">Panel upgrades, EV chargers,
-                            and safety inspections for your home.</p>
-                        <div class="flex items-center text-electric font-bold text-sm">
-                            Learn More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition"></i>
-                        </div>
-                    </div>
-                </a>
+                <!-- CTA Card -->
+                <div class="bg-gradient-to-br from-electric to-electric/80 rounded-2xl p-8 flex flex-col justify-center items-center text-center text-white">
+                    <i class="fas fa-phone-alt text-4xl mb-4 text-accent"></i>
+                    <h4 class="text-xl font-bold mb-2">Not Sure What You Need?</h4>
+                    <p class="text-white/80 text-sm mb-6">Our experts will help you choose the right fence for your property and budget.</p>
+                    <a href="tel:+15086970058" class="bg-white text-electric font-bold py-3 px-6 rounded-lg hover:bg-accent hover:text-deep transition">
+                        <i class="fas fa-phone mr-2"></i> (508) 697-0058
+                    </a>
+                </div>
             </div>
 
             <div class="mt-12 text-center">
                 <a href="services/"
-                    class="btn-secondary text-deep border-gray-300 hover:bg-gray-50 hover:border-gray-400">View All
+                    class="btn-secondary text-deep border-gray-300 hover:bg-gray-50 hover:border-electric">View All
                     Services</a>
             </div>
         </div>
@@ -272,21 +314,22 @@
     <section class="py-20 bg-deep border-y border-white/5 stats-section">
         <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
             <div class="stat-item">
-                <div class="text-4xl md:text-5xl font-black text-electric mb-3 stat-number-enhanced stat-number"
-                    data-target="10000" data-suffix="+">0</div>
-                <div class="stat-label text-chrome/60">Installations</div>
+                <div class="text-4xl md:text-5xl font-black text-accent mb-3 stat-number-enhanced stat-number"
+                    data-target="50" data-suffix="+">0</div>
+                <div class="stat-label text-chrome/60">Years Experience</div>
             </div>
             <div class="stat-item">
-                <div class="text-4xl md:text-5xl font-black text-electric mb-3 stat-number-enhanced stat-number"
-                    data-target="14">0</div>
-                <div class="stat-label text-chrome/60">Years Exp.</div>
+                <div class="text-4xl md:text-5xl font-black text-accent mb-3 stat-number-enhanced stat-number"
+                    data-target="4">0</div>
+                <div class="stat-label text-chrome/60">Generations</div>
             </div>
             <div class="stat-item">
-                <div class="text-4xl md:text-5xl font-black text-electric mb-3 stat-number-enhanced">A+</div>
-                <div class="stat-label text-chrome/60">BBB Rating</div>
+                <div class="text-4xl md:text-5xl font-black text-accent mb-3 stat-number-enhanced stat-number"
+                    data-target="1000" data-suffix="+">0</div>
+                <div class="stat-label text-chrome/60">Fences Installed</div>
             </div>
             <div class="stat-item">
-                <div class="text-4xl md:text-5xl font-black text-electric mb-3 stat-number-enhanced stat-number"
+                <div class="text-4xl md:text-5xl font-black text-accent mb-3 stat-number-enhanced stat-number"
                     data-target="100" data-suffix="%">0</div>
                 <div class="stat-label text-chrome/60">Satisfaction</div>
             </div>
@@ -298,70 +341,112 @@
         <div class="max-w-5xl mx-auto px-6 md:px-10 text-center">
             <div
                 class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-electric/10 border border-electric/20 text-electric text-xs font-bold uppercase tracking-wider mb-6">
-                <i class="fas fa-hard-hat"></i> Built by Engineers, Not Salesmen
+                <i class="fas fa-handshake"></i> Family-Owned & Operated
             </div>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-deep mb-6">Why Integrity Electrical?</h2>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-deep mb-6">Why Choose Inline Fence?</h2>
             <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-                Since 2010, we've stood against cheap, rushed solar installs. We are licensed engineers and electricians
-                who design, permit, and install our own work. When you hire us, you're hiring the people who actually
-                show up to your house—not a sales team that subcontracts to the lowest bidder.
+                Since 1988, the Bump family has built a reputation for honest work, quality materials, and fences that stand the test of time. We're not just contractors — we're your neighbors, committed to making properties across the South Shore more beautiful and secure.
             </p>
             <div class="flex flex-wrap justify-center gap-8 items-center">
                 <div class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529095/tesla-solar-certified_y5dmwj.webp"
-                        alt="Tesla Certified" class="h-10">
-                    <span class="text-sm font-semibold text-gray-700">Tesla Certified</span>
+                    <div class="h-10 w-10 bg-electric/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-tools text-electric"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">Expert Craftsmanship</span>
                 </div>
                 <div class="flex items-center gap-3">
-                    <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769528968/bbb-logo_cke8w2.png"
-                        alt="BBB A+" class="h-10">
-                    <span class="text-sm font-semibold text-gray-700">BBB A+ Rated</span>
+                    <div class="h-10 w-10 bg-electric/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-clock text-electric"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-gray-700">On-Time Delivery</span>
                 </div>
                 <div class="flex items-center gap-3">
                     <i class="fas fa-shield-alt text-electric text-2xl"></i>
-                    <span class="text-sm font-semibold text-gray-700">ROC# 331526</span>
+                    <span class="text-sm font-semibold text-gray-700">Licensed & Insured</span>
                 </div>
             </div>
             <a href="about/" class="btn-primary mt-10 inline-block">Learn More About Us</a>
         </div>
     </section>
 
-    <!-- About / Mission Section -->
+    <!-- Testimonials Preview -->
     <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="max-w-7xl mx-auto px-6 md:px-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-electric uppercase tracking-widest text-sm font-bold mb-3">What Our Customers Say</h2>
+                <h3 class="text-4xl font-extrabold text-deep mb-6">Trusted by Homeowners Across the South Shore</h3>
+            </div>
 
-            <!-- Story -->
-            <div>
-                <h2 class="text-electric uppercase tracking-widest text-sm font-bold mb-3">Our Mission</h2>
-                <h3 class="text-4xl font-extrabold text-deep mb-6">Built by Engineers, Not Salesmen</h3>
-                <div class="prose text-gray-600 leading-relaxed text-lg">
-                    <p class="mb-6">
-                        Most solar companies today are marketing firms. They sell the contract and sell the installation
-                        to the lowest bidder. That's why we founded Integrity Electrical.
-                    </p>
-                    <p class="mb-6">
-                        We are a team of licensed electricians and engineers. We design, permit, and install our own
-                        work. We don't guess—we calculate. When you hire us, you're hiring the people who actually show
-                        up to your house.
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="flex gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"The crew was professional, courteous, and finished ahead of schedule. Our new vinyl fence looks amazing — exactly what we wanted."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-electric"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-deep">Sarah M.</div>
+                            <div class="text-sm text-gray-500">Bridgewater, MA</div>
+                        </div>
+                    </div>
                 </div>
-                <a href="about/" class="btn-primary mt-6 inline-block">Learn More About Us</a>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="flex gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"Inline Fence installed a beautiful wooden privacy fence around our backyard. Great communication and fair pricing. Highly recommend!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-electric"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-deep">Mike T.</div>
+                            <div class="text-sm text-gray-500">Taunton, MA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                    <div class="flex gap-1 text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">"We've used Inline for two properties now. They're reliable, their work is solid, and they stand behind what they do. A+ company."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="h-12 w-12 bg-electric/10 rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-electric"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-deep">Jennifer L.</div>
+                            <div class="text-sm text-gray-500">Easton, MA</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Image -->
-            <div class="relative rounded-2xl overflow-hidden shadow-2xl skew-y-1 transform border-4 border-white">
-                <img src="https://www.integrityelectricalco.com/art/cms_photos/medium/2-sm.jpg"
-                    class="w-full object-cover" alt="Integrity Electrical team">
+            <div class="mt-12 text-center">
+                <a href="testimonials/" class="btn-secondary text-deep border-gray-300 hover:bg-gray-50 hover:border-electric">
+                    Read More Reviews
+                </a>
             </div>
-
-        </div>
-
-        <!-- Team Quote -->
-        <div class="max-w-4xl mx-auto mt-20 text-center bg-gray-50 rounded-3xl p-12 border border-gray-200">
-            <i class="fas fa-quote-left text-4xl text-electric mb-6"></i>
-            <p class="text-2xl font-bold text-deep mb-6">"We treat every home like it's our own. No shortcuts. No unsafe
-                wiring. Just clean, code-compliant power."</p>
-            <div class="font-bold text-gray-500 uppercase tracking-wider text-sm">– The Integrity Team</div>
         </div>
     </section>
 
@@ -375,18 +460,18 @@
                 </div>
 
                 <div class="md:w-1/2 text-white relative z-10">
-                    <h3 class="text-3xl font-bold mb-4">Fix Your Electrical Issues Today</h3>
-                    <p class="text-chrome/80 mb-6">Stop guessing. Get a licensed engineer to diagnose your system for
-                        just $75.</p>
+                    <h3 class="text-3xl font-bold mb-4">Ready to Upgrade Your Property?</h3>
+                    <p class="text-chrome/80 mb-6">Get a free, no-obligation estimate from our team. We'll help you find the perfect fence for your needs and budget.</p>
                     <ul class="space-y-2 text-sm text-chrome/70">
-                        <li><i class="fas fa-check text-electric mr-2"></i> Same-day scheduling available</li>
-                        <li><i class="fas fa-check text-electric mr-2"></i> Upfront pricing, no hidden fees</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Free on-site consultations</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Transparent pricing — no hidden fees</li>
+                        <li><i class="fas fa-check text-accent mr-2"></i> Quality materials & expert installation</li>
                     </ul>
                 </div>
 
                 <div class="md:w-1/2 w-full relative z-10">
                     <form class="bg-white/5 p-6 rounded-xl border border-white/10 space-y-3"
-                        action="https://formsubmit.co/{{EMAIL}}" method="POST">
+                        action="#" method="POST">
                         <div class="grid grid-cols-2 gap-3">
                             <input type="text" name="firstName" placeholder="First Name" required
                                 class="form-input dark-mode text-sm">
@@ -400,16 +485,15 @@
                         <input type="text" name="zipcode" placeholder="Zip Code" required
                             class="form-input dark-mode text-sm">
                         <select name="service" class="custom-select text-sm">
-                            <option value="" disabled selected>Service Needed?</option>
-                            <option value="Diagnostic">System Diagnostic ($75)</option>
-                            <option value="Solar">Solar Installation</option>
-                            <option value="Maintenance">PV Maintenance</option>
-                            <option value="Electrical">Electrical Service</option>
-                            <option value="EV Charger">EV Charger Installation</option>
+                            <option value="" disabled selected>Type of Fence?</option>
+                            <option value="Aluminum">Aluminum Fence</option>
+                            <option value="Vinyl">Vinyl / PVC Fence</option>
+                            <option value="Wood">Wooden Fence</option>
+                            <option value="Chainlink">Chainlink Fence</option>
+                            <option value="Commercial">Commercial Fencing</option>
+                            <option value="Other">Other / Not Sure</option>
                         </select>
-                        <textarea name="message" placeholder="Optional Message" rows="2"
-                            class="form-input dark-mode text-sm"></textarea>
-                        <button type="submit" class="btn-primary w-full py-3 text-sm">Request Callback</button>
+                        <button type="submit" class="btn-primary w-full py-3 text-sm">Request Free Estimate</button>
                     </form>
                 </div>
             </div>
@@ -420,91 +504,78 @@
     <footer class="bg-black text-white py-16 border-t border-white/10 text-sm">
         <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529635/integrityelectricalaz-logo-fotor-bg-remover-202601278024_fjdpvj.png"
-                    alt="Integrity Electrical" class="h-10 mb-6 opacity-90">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="h-10 w-10 bg-electric rounded-lg flex items-center justify-center">
+                        <i class="fas fa-layer-group text-white text-xl"></i>
+                    </div>
+                    <span class="text-lg font-bold">Inline Fence</span>
+                </div>
                 <p class="text-chrome/50 leading-relaxed mb-6">
-                    Integrity Electrical is Arizona's premier engineering-first electrical contractor. We bring
-                    heavy-industrial standards to residential solar and service.
+                    Family-owned fence contractor serving Bridgewater & the South Shore since 1988. Quality fencing installed right — every time.
                 </p>
                 <div class="flex gap-4 text-chrome/50">
-                    <a href="#" class="hover:text-electric"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="hover:text-electric"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="#" class="hover:text-electric"><i class="fab fa-linkedin fa-lg"></i></a>
+                    <a href="#" class="hover:text-accent"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="hover:text-accent"><i class="fab fa-instagram fa-lg"></i></a>
                 </div>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Services</h4>
                 <ul class="space-y-3 text-chrome/60">
-                    <li><a href="services/solar-installation/" class="hover:text-electric transition">Solar
-                            Installation</a></li>
-                    <li><a href="services/pv-maintenance/" class="hover:text-electric transition">PV
-                            Maintenance</a></li>
-                    <li><a href="services/remove-reinstall/" class="hover:text-electric transition">Remove &
-                            Reinstall</a></li>
-                    <li><a href="services/electrical/" class="hover:text-electric transition">Electrical
-                            Panel</a></li>
-                    <li><a href="services/ev-chargers/" class="hover:text-electric transition">EV Chargers</a>
-                    </li>
+                    <li><a href="services/" class="hover:text-accent transition">Aluminum Fences</a></li>
+                    <li><a href="services/" class="hover:text-accent transition">Vinyl / PVC Fences</a></li>
+                    <li><a href="services/" class="hover:text-accent transition">Wooden Fences</a></li>
+                    <li><a href="services/" class="hover:text-accent transition">Chainlink Fences</a></li>
+                    <li><a href="services/" class="hover:text-accent transition">Commercial Fencing</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Company</h4>
                 <ul class="space-y-3 text-chrome/60">
-                    <li><a href="about/" class="hover:text-electric transition">About Us</a></li>
-                    <li><a href="contact/" class="hover:text-electric transition">Contact Team</a></li>
-                    <li><a href="#" class="hover:text-electric transition">Careers</a></li>
-                    <li><a href="#" class="hover:text-electric transition">Privacy Policy</a></li>
+                    <li><a href="about/" class="hover:text-accent transition">About Us</a></li>
+                    <li><a href="testimonials/" class="hover:text-accent transition">Testimonials</a></li>
+                    <li><a href="contact/" class="hover:text-accent transition">Contact</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-6 uppercase tracking-wider">Contact</h4>
                 <ul class="space-y-4 text-chrome/60">
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-map-marker-alt text-electric mt-1"></i>
-                        <span>Yuma, AZ<br>Serving the entire valley</span>
+                        <i class="fas fa-map-marker-alt text-accent mt-1"></i>
+                        <span>20 Bridge St<br>Bridgewater, MA 02324</span>
                     </li>
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-phone-alt text-electric"></i>
-                        <a href="tel:+19288438293" class="hover:text-white transition">+1 (928) 843-8293</a>
+                        <i class="fas fa-phone-alt text-accent"></i>
+                        <a href="tel:+15086970058" class="hover:text-white transition">(508) 697-0058</a>
                     </li>
                     <li class="flex items-center gap-3">
-                        <i class="fas fa-envelope text-electric"></i>
-                        <a href="mailto:jmunoz@integrityelectricalco.com"
-                            class="hover:text-white transition">jmunoz@integrityelectricalco.com</a>
+                        <i class="fas fa-phone-alt text-accent"></i>
+                        <a href="tel:+15088242290" class="hover:text-white transition">(508) 824-2290</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright-row max-w-7xl mx-auto px-6 md:px-10">
-            <p class="footer-copyright-text">&copy; 2026 Integrity Electrical Contracting LLC. Licensed (ROC# 331526) •
-                Bonded • Insured.</p>
-            <div class="footer-trust-badges">
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769529095/tesla-solar-certified_y5dmwj.webp"
-                    alt="Tesla Certified">
-                <img src="https://res.cloudinary.com/ddnhp0hzd/image/upload/v1769528968/bbb-logo_cke8w2.png"
-                    alt="BBB A+">
-            </div>
+        <div class="footer-copyright-row max-w-7xl mx-auto px-6 md:px-10 mt-12 pt-8 border-t border-white/10">
+            <p class="footer-copyright-text text-center text-chrome/40">&copy; 2025 Inline Fence Inc. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Global Layout Modal: $0 Down Solar -->
+    <!-- Global Layout Modal -->
     <div id="modal-overlay"
         class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div
             class="modal-container bg-surface border border-white/10 w-full max-w-lg rounded-2xl shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-blue-500"></div>
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-electric to-accent"></div>
             <button data-close="modal" class="absolute top-4 right-4 text-chrome/50 hover:text-white">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-8">
                 <div
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-electric text-xs font-bold uppercase tracking-wider mb-4">
-                    <i class="fas fa-sun"></i> Solar Savings Program
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-electric/10 border border-electric/30 text-accent text-xs font-bold uppercase tracking-wider mb-4">
+                    <i class="fas fa-clipboard-check"></i> Free Estimate
                 </div>
-                <h3 class="text-3xl font-bold text-white mb-2">$0 Down Solar Options</h3>
-                <p class="text-chrome/80 text-sm mb-6">See if your home qualifies for $0 down solar installation. Keep
-                    your current bill or lower it immediately.</p>
-                <form class="space-y-4" action="https://formsubmit.co/{{EMAIL}}" method="POST">
+                <h3 class="text-3xl font-bold text-white mb-2">Get Your Free Quote</h3>
+                <p class="text-chrome/80 text-sm mb-6">Tell us about your fencing project — we'll get back to you within 24 hours.</p>
+                <form class="space-y-4" action="#" method="POST">
                     <div class="grid grid-cols-2 gap-4">
                         <input type="text" name="firstName" placeholder="First Name" required
                             class="form-input dark-mode">
@@ -515,26 +586,32 @@
                     <input type="email" name="email" placeholder="Email Address" required class="form-input dark-mode">
                     <input type="text" name="zipcode" placeholder="Zip Code" required
                         class="form-input dark-mode">
-
-                    <!-- Hidden field to track source -->
-                    <input type="hidden" name="service" value="Solar ($0 Down Inquiry)">
-
-                    <button type="submit" class="btn-primary w-full text-lg">Check Eligibility</button>
-                    <p class="text-center text-xs text-chrome/40">No credit impact to check. 100% Secure.</p>
+                    <select name="service" class="custom-select">
+                        <option value="" disabled selected>Type of Fence?</option>
+                        <option value="Aluminum">Aluminum Fence</option>
+                        <option value="Vinyl">Vinyl / PVC Fence</option>
+                        <option value="Wood">Wooden Fence</option>
+                        <option value="Chainlink">Chainlink Fence</option>
+                        <option value="Commercial">Commercial Fencing</option>
+                        <option value="Other">Other / Not Sure</option>
+                    </select>
+                    <input type="hidden" name="_subject" value="New Quote Request from Website">
+                    <button type="submit" class="btn-primary w-full text-lg">Get Free Estimate</button>
+                    <p class="text-center text-xs text-chrome/40">Your information is secure. No spam.</p>
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- Floating Action Button (Enhanced) -->
+    <!-- Floating Action Button -->
     <button id="fab-cta" class="fab-conversion" aria-label="Get Free Quote">
-        <i class="fas fa-bolt"></i>
+        <i class="fas fa-phone-alt"></i>
     </button>
 
     <!-- Mobile Sticky CTA -->
     <div id="mobile-sticky-cta" class="mobile-sticky-cta">
         <button data-trigger="conversion-modal" class="btn-primary w-full py-4 text-lg font-bold">
-            <i class="fas fa-bolt mr-2"></i> Get $0 Down Solar
+            <i class="fas fa-clipboard-check mr-2"></i> Free Estimate
         </button>
     </div>
 
@@ -546,14 +623,14 @@
             </button>
             <div class="conversion-modal-header">
                 <div class="conversion-modal-badge">
-                    <i class="fas fa-bolt"></i> Limited Time Offer
+                    <i class="fas fa-clipboard-check"></i> Free Quote
                 </div>
-                <h3 class="conversion-modal-title">$0 Down Solar</h3>
-                <p class="conversion-modal-subtitle">See if your home qualifies for zero-down installation</p>
+                <h3 class="conversion-modal-title">Get Your Free Estimate</h3>
+                <p class="conversion-modal-subtitle">Quick, easy, no obligation</p>
             </div>
             <div class="conversion-modal-body">
-                <form class="conversion-modal-form" action="https://formsubmit.co/{{EMAIL}}" method="POST">
-                    <input type="hidden" name="_subject" value="$0 Down Solar Inquiry - Conversion Modal">
+                <form class="conversion-modal-form" action="#" method="POST">
+                    <input type="hidden" name="_subject" value="Quick Quote Request">
                     <input type="hidden" name="_captcha" value="false">
                     <div class="grid grid-cols-2 gap-3">
                         <input type="text" name="firstName" placeholder="First Name" required
@@ -566,9 +643,9 @@
                     <input type="text" name="zipcode" placeholder="Zip Code" required
                         class="form-input dark-mode">
                     <button type="submit" class="btn-primary w-full py-4 text-lg font-bold mt-2">
-                        <i class="fas fa-check-circle mr-2"></i> Check Eligibility
+                        <i class="fas fa-check-circle mr-2"></i> Get Free Quote
                     </button>
-                    <p class="text-center text-xs text-chrome/50 mt-2">No credit impact. 100% secure.</p>
+                    <p class="text-center text-xs text-chrome/50 mt-2">Your information is secure.</p>
                 </form>
             </div>
         </div>

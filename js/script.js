@@ -1,5 +1,5 @@
 /**
- * Integrity Electrical - Core Interaction Script
+ * Base Template - Core Interaction Script
  * Handles: Mobile Menu, Modals, Forms (AJAX + Validation)
  */
 
@@ -179,7 +179,7 @@ async function handleSubmission(form) {
 
     // Explicitly add common FormSubmit configurations if not in HTML
     if (!formData.has('_captcha')) formData.append('_captcha', 'false');
-    if (!formData.has('_subject')) formData.append('_subject', 'New Lead from Integrity Electrical');
+    if (!formData.has('_subject')) formData.append('_subject', 'New Lead from Website');
 
     try {
         const response = await fetch('https://formsubmit.co/{{EMAIL}}', {
@@ -292,7 +292,7 @@ function initConversionModal() {
     // Delayed auto-open (2.5s) - session-based to avoid spam
     const isHomepage = window.location.pathname === '/' ||
         window.location.pathname.endsWith('/index.html') ||
-        window.location.pathname.endsWith('/Integrity-website/');
+        window.location.pathname === window.location.pathname.split('/').slice(0, 2).join('/') + '/';
     const isServicesPage = window.location.pathname.includes('/services');
 
     if ((isHomepage || isServicesPage) && !sessionStorage.getItem('conversionModalShown')) {

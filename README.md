@@ -1,76 +1,62 @@
-# Integrity Electrical Website
+# Website Base Template
 
-A high-fidelity, high-conversion static website for **Integrity Electrical Contracting LLC**, an engineering-first solar and electrical contractor in Yuma, AZ.
+A clean, blank, reusable website template ready for customization.
 
-This project is built to **Lovoson** repository standards: clean code, component-based CSS architecture, and production-ready static assets.
+## Features
 
-## 🚀 Live Demo
+- **Modern Design System**: Tailwind CSS + custom design tokens
+- **Responsive**: Mobile-first layout with desktop enhancements
+- **4 Core Pages**: Home, About, Services, Contact
+- **Form Components**: Hero forms, modals, contact forms
+- **Animations**: Smooth transitions, scroll reveals, micro-interactions
+- **Clean Codebase**: Semantic HTML5, organized CSS, modular JS
 
-[Link to GitHub Pages Deployment]
+## File Structure
 
-## ⚡ Tech Stack
-
-- **Core**: Semantic HTML5
-- **Styling**: TailwindCSS (CDN for lightweight deployment) + Custom CSS Variables (`css/style.css`)
-- **Scripting**: Vanilla JavaScript (ES6+)
-- **Icons**: FontAwesome 6
-- **Fonts**: Inter (Google Fonts)
-
-## 🎨 Design System
-
-The site utilizes the **"Electric Blue / Chrome"** design system.
-
-- **Primary Color**: `#00fcdb` (Electric Blue)
-- **Background**: `#111827` (Deep Slate)
-- **Surface**: `#1f2937` (Light Slate)
-- **Typography**: Inter (Weights: 300, 400, 600, 700, 800)
-
-### Key Components
-- **Glassmorphism Cards**: Backdrop blur with transparency.
-- **Neon Glows**: Box-shadows using `rgba(0, 252, 219, 0.3)`.
-- **Engineering-First Imagery**: High-contrast, industrial aesthetic.
-
-## 📂 Project Structure
-
-```text
+```
 /
-├── index.html              # Homepage (Hero, Trust, Lead Form)
-├── about/                  
-│   └── index.html          # Company History & Values
-├── contact/
-│   └── index.html          # Contact Form & Map
-├── services/
-│   ├── index.html          # Services Hub
-│   ├── solar-installation/ # Deep Service Page
-│   ├── pv-maintenance/     # Deep Service Page
-│   ├── remove-reinstall/   # Deep Service Page
-│   ├── electrical/         # Deep Service Page
-│   └── ev-chargers/        # Deep Service Page
-├── assets/
-│   ├── logo.png            # Official High-Fidelity Logo
-│   └── images/             # Visual Assets
-├── css/
-│   └── style.css           # Custom Design System
-└── js/
-    └── script.js           # Form Logic, Modals, Mobile Menu
+├── index.html              # Homepage
+├── about/index.html        # About page
+├── services/index.html     # Services page
+├── contact/index.html      # Contact page
+├── css/style.css           # Custom styles
+├── js/script.js            # Interactive functionality
+└── assets/placeholders/    # Placeholder images
+    ├── logo-placeholder.svg
+    ├── hero-placeholder.svg
+    ├── team-placeholder.svg
+    └── service-placeholder.svg
 ```
 
-## 🛠 Features
+## Customization
 
-- **Global Modal System**: Triggers on "Get Quote" and Floating Action Button.
-- **Smart Forms**: AJAX-simulated submission with validation and formatting.
-- **Mobile-First**: Fully responsive navigation and layouts.
-- **SEO Optimized**: Semantic tags, meta descriptions, and clean URLs.
+### Quick Start
 
-## 🔧 Deployment
+1. Replace "Company Name" with your brand name in all HTML files
+2. Update contact information (phone, email, address)
+3. Replace placeholder images in `/assets/placeholders/`
+4. Customize colors in Tailwind config (look for `colors: { electric: ... }`)
+5. Update meta descriptions and titles for SEO
 
-This site is designed for **GitHub Pages**.
+### Form Integration
 
-1. Go to **Settings** > **Pages**.
-2. Select Source: `Deploy from a branch`.
-3. Select Branch: `main` / `root`.
-4. Click **Save**.
+Forms use `action="#"` by default. To enable submissions:
 
-## 📜 License
+1. Replace `action="#"` with your form endpoint
+2. Options: FormSubmit.co, Formspree, Netlify Forms, custom backend
 
-© 2026 Integrity Electrical Contracting LLC. All Rights Reserved.
+### Deployment
+
+GitHub Pages compatible. Simply push to your repo and enable Pages.
+
+## Tech Stack
+
+- HTML5
+- Tailwind CSS (CDN)
+- Vanilla JavaScript
+- Font Awesome Icons
+- Google Fonts (Inter)
+
+## License
+
+MIT - Use freely for any project.
